@@ -809,7 +809,7 @@ input, select { font-family: var(--sans); }
       <div class="site-name">KlexDigirents</div>
       <div class="site-tagline">Digicam rentals · Manila, Sta. Cruz</div>
     </div>
-    <a href="#" target="_blank" class="header-book-btn" id="headerBookBtn">
+    <a href="https://forms.gle/Sw66evZ3kGFAxv3Q8" target="_blank" class="header-book-btn" id="headerBookBtn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" width="16" height="16"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
       <span>Book now</span>
     </a>
@@ -822,7 +822,7 @@ input, select { font-family: var(--sans); }
     <div class="hero-eyebrow">📍 Manila, Sta. Cruz · Pickup & meetup available</div>
     <h1>Are the digicams <span id="heroWord">available</span>?</h1>
     <p class="hero-sub">Check real-time availability for our Kodak C613, C813, and C533 cameras. Pick your dates and book in seconds.</p>
-    <a href="#" target="_blank" class="hero-book-btn" id="heroBookBtn">
+    <a href="https://forms.gle/Sw66evZ3kGFAxv3Q8" target="_blank" class="hero-book-btn" id="heroBookBtn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
       Fill the booking form
     </a>
@@ -849,15 +849,15 @@ input, select { font-family: var(--sans); }
       <span class="cam-tab-mp">6.2 MP</span>
       <span class="cam-tab-status available" id="status-c613"></span>
     </button>
-    <button class="cam-tab" role="tab" aria-selected="false" onclick="selectCamera('c813')" id="tab-c813">
-      <span class="cam-tab-name">C813</span>
-      <span class="cam-tab-mp">8.2 MP</span>
-      <span class="cam-tab-status available" id="status-c813"></span>
-    </button>
     <button class="cam-tab" role="tab" aria-selected="false" onclick="selectCamera('c533')" id="tab-c533">
       <span class="cam-tab-name">C533</span>
       <span class="cam-tab-mp">5.0 MP</span>
       <span class="cam-tab-status available" id="status-c533"></span>
+    </button>
+    <button class="cam-tab" role="tab" aria-selected="false" onclick="selectCamera('c813')" id="tab-c813">
+      <span class="cam-tab-name">C813</span>
+      <span class="cam-tab-mp">8.2 MP</span>
+      <span class="cam-tab-status available" id="status-c813"></span>
     </button>
   </div>
 
@@ -918,8 +918,8 @@ input, select { font-family: var(--sans); }
         <label for="checkCamera">Camera</label>
         <select id="checkCamera" aria-label="Select camera">
           <option value="c613">C613 (6.2 MP)</option>
-          <option value="c813">C813 (8.2 MP)</option>
           <option value="c533">C533 (5.0 MP)</option>
+          <option value="c813">C813 (8.2 MP)</option>
         </select>
       </div>
       <div class="input-group">
@@ -1029,7 +1029,7 @@ input, select { font-family: var(--sans); }
   <div class="cta-banner">
     <h2>Ready to shoot?</h2>
     <p>Fill the form — takes less than 3 minutes. Confirmation arrives in your inbox right after.</p>
-    <a href="#" target="_blank" class="cta-big-btn" id="ctaBookBtn">
+    <a href="https://forms.gle/Sw66evZ3kGFAxv3Q8" target="_blank" class="cta-big-btn" id="ctaBookBtn">
       📋 &nbsp;Open booking form
     </a>
   </div>
@@ -1050,8 +1050,8 @@ input, select { font-family: var(--sans); }
           <label>Camera *</label>
           <select id="addCamera">
             <option value="c613">C613</option>
-            <option value="c813">C813</option>
             <option value="c533">C533</option>
+            <option value="c813">C813</option>
           </select>
         </div>
         <div class="input-group">
@@ -1092,7 +1092,7 @@ input, select { font-family: var(--sans); }
 </footer>
 
 <script>
-const BOOK_FORM_URL = 'https://forms.gle/xgaUUDto3Gny7cRQ7';
+const BOOK_FORM_URL = 'https://forms.gle/Sw66evZ3kGFAxv3Q8';
 const OWNER_PASSWORD = 'klexdigirents2026';
 const STORAGE_KEY = 'kdr_bookings_v2';
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -1100,8 +1100,8 @@ const DAYS_SHORT = ['S','M','T','W','T','F','S'];
 
 const CAMERAS = {
   c613: { name: 'C613', mp: '6.2 MP', specs: '6.2 MP · 3× Optical Zoom · 2.4" LCD', color: 'amber' },
-  c813: { name: 'C813', mp: '8.2 MP', specs: '8.2 MP · 3× Optical Zoom · 2.4" LCD', color: 'blue' },
-  c533: { name: 'C533', mp: '5.0 MP', specs: '5.0 MP · 3× Optical Zoom · 2.2" LCD', color: 'purple' }
+  c533: { name: 'C533', mp: '5.0 MP', specs: '5.0 MP · 3× Optical Zoom · 2.2" LCD', color: 'purple' },
+  c813: { name: 'C813', mp: '8.2 MP', specs: '8.2 MP · 3× Optical Zoom · 2.4" LCD', color: 'blue' }
 };
 
 let viewYear, viewMonth, bookings = [], ownerUnlocked = false, selectedCamera = 'c613';
