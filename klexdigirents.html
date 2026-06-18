@@ -578,9 +578,9 @@ input, select { font-family: var(--sans); }
     <div class="logo-mark" aria-hidden="true">📷</div>
     <div>
       <div class="site-name">KlexDigirents</div>
-      <div class="site-tagline">Digicam rental · Quezon City</div>
+      <div class="site-tagline">Digicam rental · Manila, Sta. Cruz</div>
     </div>
-    <a href="https://forms.gle/jGDgZTCiHg3ksJPE8" target="_blank" class="header-book-btn" id="headerBookBtn">
+    <a href="https://forms.gle/EJVAJxMk596BPCkr6" target="_blank" class="header-book-btn" id="headerBookBtn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
       <span>Book now</span>
     </a>
@@ -591,10 +591,10 @@ input, select { font-family: var(--sans); }
 
   <!-- ── Hero ── -->
   <section class="hero">
-    <div class="hero-eyebrow">📍 Quezon City · Available for pickup &amp; meetup</div>
+    <div class="hero-eyebrow">📍 Manila, Sta. Cruz · Available for pickup &amp; meetup</div>
     <h1>Is the digicam <span id="heroWord">available</span>?</h1>
     <p class="hero-sub">Check real-time availability, pick your dates, and book the Kodak Easyshare in seconds.</p>
-    <a href="https://forms.gle/jGDgZTCiHg3ksJPE8" target="_blank" class="hero-book-btn" id="heroBookBtn">
+    <a href="https://forms.gle/EJVAJxMk596BPCkr6" target="_blank" class="hero-book-btn" id="heroBookBtn">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
       Fill the booking form
     </a>
@@ -708,7 +708,10 @@ input, select { font-family: var(--sans); }
       <span class="pricing-row-val">On return ✓</span>
     </div>
     <div class="pricing-note">
-      Payment via GCash · <strong style="color:var(--amber)">09516427351</strong> · K.H<br>
+      <strong style="color:var(--amber)">Payment options:</strong><br>
+      💙 Maya &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· <strong style="color:var(--amber)">09516427351</strong><br>
+      💚 Mari Bank · <strong style="color:var(--amber)">17557472266</strong><br>
+      🟡 GoTyme &nbsp;&nbsp;· <strong style="color:var(--amber)">010591624320</strong><br><br>
       Return time = same hour as rental time the next day.<br>
       Extra battery available — request in the form.
     </div>
@@ -747,11 +750,36 @@ input, select { font-family: var(--sans); }
     </div>
   </section>
 
+  <!-- ── Contact Card ── -->
+  <section class="pricing-card" style="margin-bottom:24px">
+    <div class="section-label">Contact &amp; payment</div>
+    <div class="pricing-row">
+      <span class="pricing-row-label">📘 Facebook</span>
+      <a href="https://www.facebook.com/KemKlex.Co" target="_blank" rel="noopener" style="font-family:var(--mono);font-weight:700;color:var(--amber);font-size:13px;">KemKlex.Co</a>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row-label">📍 Location</span>
+      <span style="font-family:var(--mono);font-weight:700;color:var(--amber);font-size:13px;">Manila, Sta. Cruz</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row-label">💙 Maya</span>
+      <span style="font-family:var(--mono);font-weight:700;color:var(--amber);">09516427351</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row-label">💚 Mari Bank</span>
+      <span style="font-family:var(--mono);font-weight:700;color:var(--amber);">17557472266</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-row-label">🟡 GoTyme</span>
+      <span style="font-family:var(--mono);font-weight:700;color:var(--amber);">010591624320</span>
+    </div>
+  </section>
+
   <!-- ── CTA Banner ── -->
   <div class="cta-banner">
     <h2>Ready to shoot?</h2>
     <p>Fill the form — takes less than 3 minutes. Confirmation arrives in your inbox right after.</p>
-    <a href="https://forms.gle/jGDgZTCiHg3ksJPE8" target="_blank" class="cta-big-btn" id="ctaBookBtn">
+    <a href="https://forms.gle/EJVAJxMk596BPCkr6" target="_blank" class="cta-big-btn" id="ctaBookBtn">
       📋 &nbsp;Open booking form
     </a>
   </div>
@@ -799,13 +827,17 @@ input, select { font-family: var(--sans); }
 
 <!-- ── Footer ── -->
 <footer class="site-footer">
-  <p>© <span id="footerYear"></span> KlexDigirents · Quezon City · <a href="mailto:your_email@gmail.com">your_email@gmail.com</a> · GCash 09516427351</p>
+  <p>© <span id="footerYear"></span> KlexDigirents · Manila, Sta. Cruz</p>
+  <p style="margin-top:6px;">
+    <a href="https://www.facebook.com/KemKlex.Co" target="_blank" rel="noopener" style="color:var(--amber);">📘 facebook.com/KemKlex.Co</a>
+    &nbsp;·&nbsp; Maya: 09516427351 &nbsp;·&nbsp; Mari Bank: 17557472266 &nbsp;·&nbsp; GoTyme: 010591624320
+  </p>
   <p style="margin-top:6px; color:var(--hint)">Availability updates when owner logs new bookings. Last check: <span id="lastCheck">just now</span></p>
 </footer>
 
 <script>
 /* ── CONFIG ── */
-const BOOK_FORM_URL = 'https://forms.gle/jGDgZTCiHg3ksJPE8';
+const BOOK_FORM_URL = 'https://forms.gle/EJVAJxMk596BPCkr6';
 const OWNER_PASSWORD = 'klexdigirents2026'; /* change this */
 const STORAGE_KEY = 'kdr_bookings_v1';
 const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
