@@ -234,6 +234,31 @@ footer a{color:var(--muted)}
 .chat-form button{width:44px;height:44px;border-radius:50%;background:var(--rust);border:none;color:#fff;cursor:pointer;font-size:18px}
 .toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--olive);color:#111;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;z-index:80;opacity:0;transition:opacity .2s;pointer-events:none}
 .toast.show{opacity:1}
+/* SMOOTH + GLOW on every interactive option */
+:root{--glow:0 0 0 1px var(--rust-border),0 0 18px rgba(224,138,85,.35);--glow-strong:0 0 0 1px rgba(224,138,85,.6),0 0 26px rgba(224,138,85,.55);--smooth:.35s var(--ease)}
+.btn,.nav-links a,.brand,.seg button,.icon-btn,.day,.faq-cats button,.chips button,.copy,.chat-fab,.chat-form button,
+.field input,.field select,.faq-tools input,.chat-form input,.faq-list details,.faq-list summary,details.print summary,.card,.pill,.tag,a{
+  transition:color var(--smooth),background-color var(--smooth),border-color var(--smooth),box-shadow var(--smooth),transform var(--smooth),opacity var(--smooth)}
+.btn:hover,.btn:focus-visible{box-shadow:var(--glow);transform:translateY(-2px)}
+.btn-primary:hover,.btn-primary:focus-visible,.chat-fab:hover,.chat-form button:hover{box-shadow:var(--glow-strong)}
+.btn:active,.seg button:active,.day:active,.chips button:active,.copy:active{transform:scale(.97)}
+.brand:hover{color:var(--rust-light);text-shadow:0 0 14px rgba(224,138,85,.55)}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--rust-light);text-shadow:0 0 12px rgba(224,138,85,.5);background:var(--rust-dim)}
+.seg button:hover{color:var(--text);box-shadow:var(--glow)}
+.seg button[aria-pressed="true"],.faq-cats button[aria-pressed="true"]{box-shadow:var(--glow-strong)}
+.faq-cats button:hover,.chips button:hover,.copy:hover,.icon-btn:hover{border-color:var(--rust-border);color:var(--rust-light);box-shadow:var(--glow)}
+.day:not(:disabled):hover{transform:translateY(-2px);box-shadow:var(--glow)}
+.day.sel{box-shadow:var(--glow-strong)}
+.field input:focus,.field select:focus,.faq-tools input:focus,.chat-form input:focus{outline:none;border-color:var(--rust-light);box-shadow:var(--glow)}
+.card:hover{border-color:var(--rust-border);box-shadow:0 0 0 1px rgba(196,98,45,.18),0 10px 34px rgba(196,98,45,.14)}
+.faq-list details:hover,.faq-list details[open]{border-color:var(--rust-border);box-shadow:var(--glow)}
+.faq-list summary:hover,details.print summary:hover{color:var(--rust-light)}
+.faq-list details[open] .a,details.print[open] > :not(summary){animation:fadeIn .4s var(--ease)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.pill.ok{box-shadow:0 0 12px rgba(143,163,92,.35)}
+.pill.no{box-shadow:0 0 12px rgba(208,96,78,.3)}
+.chat-fab{animation:fabGlow 2.8s ease-in-out infinite}
+@keyframes fabGlow{0%,100%{box-shadow:0 10px 30px rgba(0,0,0,.45),0 0 0 0 rgba(224,138,85,.45)}50%{box-shadow:0 10px 30px rgba(0,0,0,.45),0 0 0 10px rgba(224,138,85,0)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -241,7 +266,7 @@ footer a{color:var(--muted)}
 
 <nav class="nav" aria-label="Main">
   <div class="wrap">
-    <a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">📷</span>KlexDigirents</a>
+    <a href="#top" class="brand">KlexDigirents</a>
     <div class="nav-links">
       <a href="#availability">Availability</a>
       <a href="#cameras">Cameras</a>
