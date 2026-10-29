@@ -76,7 +76,11 @@ section{padding:clamp(80px,10vw,144px) 0}
 
 /* HERO */
 .hero{padding:clamp(48px,7vw,104px) 0 clamp(64px,8vw,120px)}
-.hero h1{max-width:12.5ch;margin-bottom:clamp(32px,4vw,48px)}
+.hero h1{max-width:12.5ch;margin-bottom:clamp(32px,4vw,48px);min-height:1.9em}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.caret{display:inline-block;width:.09em;height:.82em;margin-left:.06em;background:var(--accent);vertical-align:-.04em;animation:caret 1s steps(1) infinite}
+.caret.busy{animation:none}
+@keyframes caret{50%{opacity:0}}
 .hero-grid{display:grid;grid-template-columns:1fr minmax(320px,440px);gap:clamp(32px,5vw,80px);align-items:start}
 .hero-grid .sub{color:var(--text)}
 .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
@@ -296,7 +300,7 @@ footer a{color:var(--muted)}
 <main id="top">
   <section class="hero">
     <div class="wrap">
-      <h1>Y2K digicams for ₱200 a day.</h1>
+      <h1><span class="sr-only">Y2K digicams for ₱200 a day.</span><span id="typeText" aria-hidden="true">Y2K digicams for ₱200 a day.</span><span class="caret" id="caret" aria-hidden="true"></span></h1>
       <div class="hero-grid">
         <div>
           <p class="sub">Rent a Kodak EasyShare C613, C533 or C813 for parties, trips and gigs. Pick up near Blumentritt Station in Sta. Cruz, Manila.</p>
@@ -913,6 +917,31 @@ addEventListener('scroll', syncNav, { passive:true }); syncNav();
       el.classList.add('rv'); el.style.setProperty('--d', Math.min(i, 6) * 80 + 'ms'); io.observe(el);
     });
   });
+})();
+
+/* hero headline: types each phrase (70–140ms per character), holds 1.5s, deletes, moves on */
+(function(){
+  const PHRASES = ['Y2K digicams for ₱200 a day.', 'Flash photos, 2005 style.', 'Pick up at Blumentritt.'];
+  const el = $('#typeText'), caret = $('#caret');
+  if (!el || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const chars = s => Array.from(s);
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  const rand = (a, b) => a + Math.random() * (b - a);
+  (async () => {
+    let i = 0;
+    await wait(1500); // the first phrase is already on screen
+    for (;;){
+      const cur = chars(PHRASES[i]);
+      caret.classList.add('busy');
+      for (let n = cur.length; n > 0; n--){ el.textContent = cur.slice(0, n - 1).join(''); await wait(rand(35, 60)); }
+      i = (i + 1) % PHRASES.length;
+      const next = chars(PHRASES[i]);
+      await wait(300);
+      for (let n = 1; n <= next.length; n++){ el.textContent = next.slice(0, n).join(''); await wait(rand(70, 140)); }
+      caret.classList.remove('busy');
+      await wait(1500);
+    }
+  })();
 })();
 
 (async function init(){
