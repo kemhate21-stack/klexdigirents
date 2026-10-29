@@ -3,953 +3,880 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KlexDigirents – Digicam Availability</title>
-<meta name="description" content="Kodak C613, C813, C533 digicam rentals in Manila, Sta. Cruz. Check availability and book instantly.">
+<title>KlexDigirents – Digicam Rentals in Sta. Cruz, Manila</title>
+<meta name="description" content="Rent a Kodak C613, C533 or C813 digicam for ₱200/day in Sta. Cruz, Manila (near Blumentritt LRT-1). Check live availability, see the FAQ, or ask KlexBot.">
 <meta name="theme-color" content="#1c1c1a">
+<meta property="og:title" content="KlexDigirents – ₱200/day Kodak digicam rentals">
+<meta property="og:description" content="Y2K digicam rentals near Blumentritt Station. Check dates and book in minutes.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"KlexDigirents","description":"Kodak digicam rentals – C613, C533, C813 – ₱200 per day.","address":{"@type":"PostalAddress","addressLocality":"Sta. Cruz, Manila","addressCountry":"PH"},"priceRange":"₱200/day","openingHours":"Mo-Su 10:00-19:00","sameAs":["https://www.facebook.com/KemKlex.Co"]}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#1c1c1a;--surface:#252523;--surface2:#2e2e2b;--surface3:#383834;
-  --border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);
-  --text:#e8e4dc;--muted:#8a8578;--hint:#575450;
-  --rust:#c4622d;--rust-light:#d97a45;--rust-dim:rgba(196,98,45,0.13);--rust-dim2:rgba(196,98,45,0.22);--rust-border:rgba(196,98,45,0.38);
-  --olive:#7a8c4e;--olive-light:#96a860;--olive-dim:rgba(122,140,78,0.14);--olive-dim2:rgba(122,140,78,0.22);--olive-border:rgba(122,140,78,0.35);
-  --clash:#b84a3a;--clash-dim:rgba(184,74,58,0.13);--clash-dim2:rgba(184,74,58,0.2);--clash-border:rgba(184,74,58,0.35);
-  --cam-c613:#c4622d;--cam-c613-dim:rgba(196,98,45,0.14);
-  --cam-c533:#7a8c4e;--cam-c533-dim:rgba(122,140,78,0.14);
-  --cam-c813:#8c6e3c;--cam-c813-dim:rgba(140,110,60,0.14);
-  --sidebar:260px;
-  --radius:12px;--radius-sm:8px;
-  --mono:'Courier Prime',monospace;--sans:'Inter',system-ui,sans-serif;
-  --ease-out:cubic-bezier(0.16,1,0.3,1);--ease-spring:cubic-bezier(0.34,1.56,0.64,1);
+  --border:rgba(255,255,255,.08);--border2:rgba(255,255,255,.14);
+  --text:#ece8e0;--muted:#a19c8f;--hint:#77736a;
+  --rust:#c4622d;--rust-light:#e08a55;--rust-dim:rgba(196,98,45,.14);--rust-border:rgba(196,98,45,.4);
+  --olive:#8fa35c;--olive-dim:rgba(122,140,78,.18);--olive-border:rgba(143,163,92,.45);
+  --amber:#d6a347;--amber-dim:rgba(214,163,71,.16);--amber-border:rgba(214,163,71,.45);
+  --clash:#d0604e;--clash-dim:rgba(184,74,58,.16);--clash-border:rgba(208,96,78,.45);
+  --radius:14px;--radius-sm:9px;
+  --mono:'Courier Prime',ui-monospace,monospace;--sans:'Inter',system-ui,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
 }
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased}
-a{color:var(--rust-light);text-decoration:none;transition:color 0.2s}
-a:hover{color:var(--rust);text-decoration:underline}
-button,input,select{font-family:var(--sans)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes slideDown{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
-@keyframes slideIn{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:translateX(0)}}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:var(--rust-light)}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--rust-light);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.label{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--rust-light);margin-bottom:8px;display:block}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(24px,4vw,32px);margin-bottom:8px}
+.sub{color:var(--muted);max-width:620px}
+section{padding:64px 0;border-top:1px solid var(--border)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:15px;border:1px solid transparent;cursor:pointer;text-decoration:none;transition:transform .15s,background .15s,border-color .15s;min-height:46px}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--rust);color:#fff}
+.btn-primary:hover{background:#d26c35}
+.btn-ghost{background:transparent;border-color:var(--border2);color:var(--text)}
+.btn-ghost:hover{border-color:var(--rust-border);color:var(--rust-light)}
+.btn-sm{padding:8px 14px;min-height:36px;font-size:13px}
 
-/* ── HEADER ── */
-.site-header{position:sticky;top:0;z-index:200;background:rgba(28,28,26,0.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:10px 20px}
-.site-header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:12px}
-.logo-mark{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--rust-dim2),var(--rust-dim));border:1px solid var(--rust-border);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;transition:transform 0.3s var(--ease-spring)}
-.logo-mark:hover{transform:rotate(-8deg) scale(1.05)}
-.site-name{font-size:15px;font-weight:700;color:var(--text)}
-.site-tagline{font-size:11px;color:var(--muted)}
-.header-sidebar-toggle{display:none;margin-left:auto;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--muted);padding:8px 14px;font-size:12px;cursor:pointer;font-family:var(--mono);transition:all 0.2s}
-.header-sidebar-toggle:hover{color:var(--rust-light);border-color:var(--rust-border)}
+/* NAV */
+.nav{position:sticky;top:0;z-index:50;background:rgba(28,28,26,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;gap:16px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800}
+.brand-mark{width:34px;height:34px;border-radius:10px;background:var(--rust-dim);border:1px solid var(--rust-border);display:grid;place-items:center}
+.nav-links{display:flex;gap:4px;margin-left:auto}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;padding:8px 10px;border-radius:8px}
+.nav-links a:hover{color:var(--text);background:var(--surface2)}
+@media(max-width:760px){.nav-links{display:none}.nav .btn{margin-left:auto}}
 
-/* ── LAYOUT: sidebar + main ── */
-.layout{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:var(--sidebar) 1fr;gap:0;min-height:calc(100vh - 57px);align-items:start}
+/* HERO */
+.hero{padding:64px 0 48px;border-top:none}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(34px,6vw,56px);margin:10px 0 16px}
+.hero h1 em{font-style:normal;color:var(--rust-light)}
+.hero p{color:var(--muted);font-size:17px;max-width:520px}
+.hero-ctas{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.hero-facts{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px;font-size:13px;color:var(--muted)}
+.hero-facts strong{display:block;color:var(--text);font-size:16px}
+.today-card{padding:22px}
+.today-card h3{font-size:15px;color:var(--muted);font-weight:600;margin-bottom:14px}
+.today-row{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-top:1px solid var(--border)}
+.today-row:first-of-type{border-top:none}
+.today-row .model{font-family:var(--mono);font-weight:700;font-size:17px}
+.today-row .mp{color:var(--hint);font-size:12px;margin-left:6px}
+.pill{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;border:1px solid}
+.pill.ok{color:var(--olive);background:var(--olive-dim);border-color:var(--olive-border)}
+.pill.no{color:var(--clash);background:var(--clash-dim);border-color:var(--clash-border)}
+.data-note{font-size:11.5px;color:var(--hint);margin-top:12px}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr}}
 
-/* ── SIDEBAR ── */
-.sidebar{position:sticky;top:57px;height:calc(100vh - 57px);overflow-y:auto;border-right:1px solid var(--border);background:var(--surface);display:flex;flex-direction:column;scrollbar-width:thin;scrollbar-color:var(--surface3) transparent}
-.sidebar::-webkit-scrollbar{width:4px}
-.sidebar::-webkit-scrollbar-thumb{background:var(--surface3);border-radius:2px}
-.sidebar-section{padding:20px 18px;border-bottom:1px solid var(--border)}
-.sidebar-section:last-child{border-bottom:none}
-.sidebar-label{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--hint);margin-bottom:12px;display:flex;align-items:center;gap:8px}
-.sidebar-label::after{content:'';flex:1;height:1px;background:var(--border)}
+/* AVAILABILITY */
+.avail-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;margin-top:28px;align-items:start}
+@media(max-width:860px){.avail-grid{grid-template-columns:1fr}}
+.seg{display:flex;gap:4px;background:var(--surface2);padding:4px;border-radius:999px;width:max-content;max-width:100%;overflow-x:auto;margin-bottom:16px}
+.seg button{background:none;border:none;padding:7px 14px;border-radius:999px;cursor:pointer;font-size:13px;font-weight:600;color:var(--muted);white-space:nowrap}
+.seg button[aria-pressed="true"]{background:var(--rust);color:#fff}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.cal-head strong{font-size:16px}
+.icon-btn{width:36px;height:36px;border-radius:9px;background:var(--surface2);border:1px solid var(--border);cursor:pointer}
+.icon-btn:hover{border-color:var(--rust-border)}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.dow{text-align:center;font-family:var(--mono);font-size:11px;color:var(--hint);padding:4px 0}
+.day{aspect-ratio:1;border-radius:8px;border:1px solid transparent;background:none;font-size:13px;font-weight:600;cursor:pointer;position:relative}
+.day.free{background:var(--olive-dim);border-color:var(--olive-border)}
+.day.some{background:var(--amber-dim);border-color:var(--amber-border)}
+.day.full{background:var(--clash-dim);border-color:var(--clash-border);cursor:not-allowed;color:var(--muted)}
+.day.past{opacity:.3;cursor:default}
+.day.today{outline:2px solid var(--rust-light);outline-offset:-2px}
+.day.sel{background:var(--rust);color:#fff;border-color:var(--rust)}
+.day.inrange{box-shadow:inset 0 0 0 2px var(--rust-light)}
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px;font-size:12px;color:var(--muted)}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px;border:1px solid}
+.form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:10px}
+.avail-grid>*,.price-grid>*,.loc-grid>*{min-width:0}
+.field label{display:block;font-size:12px;color:var(--muted);margin-bottom:5px;font-weight:600}
+.field input,.field select{width:100%;background:var(--surface2);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:11px 12px;min-height:44px;color-scheme:dark}
+.check-out{margin-top:14px;border-radius:var(--radius-sm);padding:14px;font-size:14px;display:none}
+.check-out.show{display:block}
+.check-out.ok{background:var(--olive-dim);border:1px solid var(--olive-border)}
+.check-out.no{background:var(--clash-dim);border:1px solid var(--clash-border)}
+.check-out .cams{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}
+.estimate{margin-top:12px;border-top:1px dashed var(--border2);padding-top:12px;font-size:13.5px}
+.estimate div{display:flex;justify-content:space-between;padding:2px 0}
+.estimate .tot{font-weight:800;font-size:15px;margin-top:4px}
+.check-out .btn{margin-top:12px}
 
-/* Sidebar: Contact */
-.sb-contact-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;font-size:12px;border-bottom:1px solid var(--border)}
-.sb-contact-row:last-child{border-bottom:none}
-.sb-contact-label{color:var(--muted)}
-.sb-contact-val{font-family:var(--mono);font-weight:700;color:var(--rust-light);font-size:11px}
+/* CAMERAS */
+.cams-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+@media(max-width:860px){.cams-grid{grid-template-columns:1fr}}
+.cam{display:flex;flex-direction:column;gap:10px}
+.cam-top{display:flex;justify-content:space-between;align-items:baseline}
+.cam-top h3{font-family:var(--mono);font-size:24px}
+.cam-price{font-weight:800;color:var(--rust-light)}
+.cam .specs{font-size:13px;color:var(--muted)}
+.cam .best{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--amber)}
+.cam p{font-size:14px;color:var(--muted)}
+.kit{margin-top:22px;font-size:14px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.tag{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--surface2);border:1px solid var(--border);color:var(--text)}
 
-/* Sidebar: Hours */
-.sb-hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
-.sb-hour-box{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:10px 12px}
-.sb-hour-label{font-size:10px;color:var(--muted);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:3px}
-.sb-hour-val{font-size:13px;font-weight:700;color:var(--text);font-family:var(--mono)}
-.sb-night-notice{background:var(--rust-dim);border:1px solid var(--rust-border);border-radius:var(--radius-sm);padding:10px 12px;font-size:11px;color:var(--muted);line-height:1.6}
+/* PRICING */
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px;align-items:start}
+@media(max-width:820px){.price-grid{grid-template-columns:1fr}}
+.rows div{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--border);font-size:14.5px}
+.rows div:last-child{border-bottom:none}
+.rows span:last-child{font-weight:700;text-align:right}
+.big-price{font-size:46px;font-weight:800;letter-spacing:-.03em}
+.big-price small{font-size:16px;color:var(--muted);font-weight:500}
+.pay{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px}
+.pay:last-child{border-bottom:none}
+.pay code{font-family:var(--mono);font-weight:700;color:var(--rust-light)}
+.copy{background:var(--surface2);border:1px solid var(--border);border-radius:7px;padding:4px 10px;font-size:12px;cursor:pointer}
+.copy:hover{border-color:var(--rust-border)}
+details.print{margin-top:20px}
+details.print summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between}
+details.print summary::after{content:'+';color:var(--rust-light);font-size:20px;line-height:1}
+details.print[open] summary::after{content:'–'}
+.ptable{width:100%;border-collapse:collapse;margin-top:14px;font-size:13px}
+.ptable th,.ptable td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--border)}
+.ptable th{font-family:var(--mono);font-weight:400;color:var(--hint);font-size:11px;text-transform:uppercase}
+.ptable td:first-child{color:var(--text)}
+.ptable td{color:var(--muted)}
+.table-scroll{overflow-x:auto}
 
-/* Sidebar: Location */
-.sb-location{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px}
-.sb-location-name{font-size:12px;font-weight:700;color:var(--text);margin-bottom:3px}
-.sb-location-sub{font-size:11px;color:var(--muted)}
-.sb-map-link{display:inline-flex;align-items:center;gap:5px;margin-top:8px;font-size:11px;color:var(--rust-light);font-family:var(--mono);font-weight:700}
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px;counter-reset:s}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step::before{counter-increment:s;content:'0' counter(s);font-family:var(--mono);color:var(--rust-light);font-weight:700;display:block;margin-bottom:6px}
+.step h3{font-size:16px;margin-bottom:4px}
+.step p{font-size:13.5px;color:var(--muted)}
 
-/* Sidebar: Sample shots */
-.sb-photos-tabs{display:flex;gap:4px;margin-bottom:10px}
-.sb-photo-tab{flex:1;padding:6px 4px;background:transparent;border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--muted);font-size:11px;font-weight:700;cursor:pointer;font-family:var(--mono);transition:all 0.2s;text-align:center}
-.sb-photo-tab:hover{color:var(--text);border-color:var(--border2)}
-.sb-photo-tab.active{background:var(--rust-dim2);color:var(--rust-light);border-color:var(--rust-border)}
-.sb-photos-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
-.sb-photo{aspect-ratio:4/3;border-radius:var(--radius-sm);background:var(--surface2);border:1px solid var(--border);overflow:hidden;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.2s}
-.sb-photo:hover{border-color:var(--rust-border);transform:scale(1.02)}
-.sb-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.sb-photo-placeholder{font-size:10px;color:var(--hint);font-family:var(--mono);text-align:center;padding:8px}
-.sb-drive-link{display:flex;align-items:center;gap:6px;margin-top:10px;padding:9px 12px;background:var(--rust-dim);border:1px solid var(--rust-border);border-radius:var(--radius-sm);font-size:11px;font-weight:700;color:var(--rust-light);font-family:var(--mono);transition:all 0.2s;text-decoration:none}
-.sb-drive-link:hover{background:var(--rust-dim2);text-decoration:none;color:var(--rust-light)}
+/* FAQ */
+.faq-tools{display:flex;gap:10px;flex-wrap:wrap;margin:24px 0 16px}
+.faq-tools input{flex:1;min-width:220px;background:var(--surface);border:1px solid var(--border2);border-radius:999px;padding:12px 18px;min-height:46px}
+.faq-cats{display:flex;gap:6px;flex-wrap:wrap}
+.faq-cats button{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:7px 13px;font-size:13px;cursor:pointer;color:var(--muted)}
+.faq-cats button[aria-pressed="true"]{border-color:var(--rust-border);color:var(--rust-light);background:var(--rust-dim)}
+.faq-list details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);margin-bottom:8px}
+.faq-list summary{cursor:pointer;padding:15px 18px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:'+';color:var(--rust-light);font-size:20px;line-height:1}
+.faq-list details[open] summary::after{content:'–'}
+.faq-list .a{padding:0 18px 16px;color:var(--muted);font-size:14.5px}
+.faq-list .a strong{color:var(--text)}
+.faq-empty{color:var(--muted);font-size:14px;padding:12px 0;display:none}
 
-/* Sidebar: FAQ */
-.sb-faq-item{border-bottom:1px solid var(--border)}
-.sb-faq-item:last-child{border-bottom:none}
-.sb-faq-q{width:100%;background:none;border:none;color:var(--muted);font-size:12px;font-weight:600;padding:10px 0;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:8px;transition:color 0.2s;font-family:var(--sans);line-height:1.4}
-.sb-faq-q:hover{color:var(--rust-light)}
-.sb-faq-q .arr{font-size:10px;flex-shrink:0;margin-top:2px;transition:transform 0.25s var(--ease-spring);color:var(--hint)}
-.sb-faq-item.open .sb-faq-q{color:var(--rust-light)}
-.sb-faq-item.open .sb-faq-q .arr{transform:rotate(180deg);color:var(--rust-light)}
-.sb-faq-a{font-size:11px;color:var(--muted);line-height:1.65;padding-bottom:10px;display:none}
-.sb-faq-item.open .sb-faq-a{display:block;animation:slideDown 0.2s var(--ease-out)}
-.sb-faq-a strong{color:var(--rust-light)}
+/* REVIEWS + LOCATION */
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+@media(max-width:860px){.reviews{grid-template-columns:1fr}}
+.reviews blockquote{font-size:14.5px}
+.reviews .stars{color:var(--amber);letter-spacing:2px;margin-bottom:8px}
+.reviews cite{display:block;margin-top:10px;font-style:normal;font-size:12px;color:var(--hint)}
+.loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+@media(max-width:820px){.loc-grid{grid-template-columns:1fr}}
+.notice{background:var(--rust-dim);border:1px solid var(--rust-border);border-radius:var(--radius-sm);padding:12px 14px;font-size:13.5px;color:var(--muted);margin-top:14px}
 
-/* ── MAIN CONTENT ── */
-.main{padding:0 24px 80px;min-width:0}
+.cta{text-align:center;background:linear-gradient(180deg,var(--surface),var(--bg))}
+.cta .hero-ctas{justify-content:center}
+footer{border-top:1px solid var(--border);padding:32px 0 100px;font-size:13px;color:var(--hint);text-align:center}
+footer a{color:var(--muted)}
 
-/* Hero */
-.hero{padding:48px 0 32px;text-align:center}
-.hero-eyebrow{font-family:var(--mono);font-size:10px;color:var(--rust-light);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:12px;opacity:0;animation:fadeUp 0.6s var(--ease-out) 0.1s forwards}
-.hero h1{font-size:clamp(24px,4vw,38px);font-weight:700;color:var(--text);line-height:1.12;margin-bottom:10px;opacity:0;animation:fadeUp 0.6s var(--ease-out) 0.2s forwards}
-.hero h1 span{color:var(--rust-light)}
-.hero-sub{font-size:14px;color:var(--muted);max-width:400px;margin:0 auto;opacity:0;animation:fadeUp 0.6s var(--ease-out) 0.3s forwards}
-
-/* Status Pills */
-.status-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:28px 0}
-.stat-pill{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;transition:all 0.25s}
-.stat-pill:hover{border-color:var(--border2);transform:translateY(-2px)}
-.stat-pill-label{font-size:10px;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:6px}
-.stat-pill-val{font-size:20px;font-weight:700;color:var(--text);font-family:var(--mono)}
-.stat-pill-val.green{color:var(--olive-light)}
-.stat-pill-val.amber{color:var(--rust-light)}
-.stat-pill-val.red{color:var(--clash)}
-
-/* Camera Selector */
-.camera-selector{display:flex;gap:6px;margin-bottom:16px;padding:5px;background:var(--surface);border-radius:var(--radius);border:1px solid var(--border)}
-.cam-tab{flex:1;padding:10px 8px;background:transparent;border:none;border-radius:var(--radius-sm);color:var(--muted);font-size:12px;font-weight:600;cursor:pointer;transition:all 0.25s;display:flex;flex-direction:column;align-items:center;gap:3px}
-.cam-tab:hover{color:var(--text);background:var(--surface2)}
-.cam-tab.active{background:var(--rust-dim2);color:var(--rust-light)}
-.cam-tab-name{font-family:var(--mono);font-size:13px;font-weight:700}
-.cam-tab-mp{font-size:10px;opacity:0.7}
-.cam-tab-status{width:7px;height:7px;border-radius:50%;margin-top:3px}
-.cam-tab-status.available{background:var(--olive-light)}
-.cam-tab-status.booked{background:var(--clash)}
-
-/* Camera Card */
-.cam-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:10px;transition:all 0.3s}
-.cam-card:hover{border-color:var(--border2)}
-.cam-card-header{display:flex;gap:14px;align-items:flex-start;margin-bottom:14px}
-.cam-icon{width:60px;height:60px;border-radius:12px;background:linear-gradient(135deg,var(--rust-dim2),var(--rust-dim));border:1px solid var(--rust-border);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0;transition:transform 0.3s var(--ease-spring)}
-.cam-card:hover .cam-icon{transform:scale(1.05) rotate(-3deg)}
-.cam-info{flex:1;min-width:0}
-.cam-name{font-size:16px;font-weight:700;color:var(--text);margin-bottom:3px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.cam-model{font-family:var(--mono);font-size:11px;padding:2px 7px;background:var(--rust-dim);color:var(--rust-light);border-radius:4px}
-.cam-price{font-size:16px;font-weight:700;color:var(--rust-light);font-family:var(--mono);margin-bottom:3px}
-.cam-specs{font-size:12px;color:var(--muted);margin-bottom:3px}
-.cam-badge{flex-shrink:0;display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:20px;font-size:11px;font-weight:700;font-family:var(--mono)}
-.cam-badge.available{background:var(--olive-dim2);color:var(--olive-light);border:1px solid var(--olive-border)}
-.cam-badge.booked{background:var(--clash-dim2);color:var(--clash);border:1px solid var(--clash-border)}
-.cam-includes{display:flex;flex-wrap:wrap;gap:6px;padding-top:14px;border-top:1px solid var(--border)}
-.cam-tag{font-size:10px;padding:4px 9px;background:var(--surface2);border:1px solid var(--border);border-radius:20px;color:var(--muted);font-family:var(--mono)}
-
-/* Perfect For */
-.perfect-for{background:var(--surface2);border:1px solid var(--border);border-left:3px solid var(--rust-light);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:12px 16px;margin-bottom:24px;display:flex;gap:10px;align-items:flex-start}
-.perfect-for-icon{font-size:20px;flex-shrink:0;margin-top:1px}
-.perfect-for-label{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--rust-light);margin-bottom:3px}
-.perfect-for-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:4px}
-.perfect-for-desc{font-size:12px;color:var(--muted);line-height:1.65}
-
-/* Section Label */
-.section-label{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.section-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
-
-/* Calendar */
-.cal-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
-.cal-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
-.cal-month-label{font-size:14px;font-weight:700;color:var(--text);font-family:var(--mono)}
-.cal-nav-btn{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--muted);cursor:pointer;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-size:14px;transition:all 0.2s}
-.cal-nav-btn:hover{border-color:var(--rust-light);color:var(--rust-light)}
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
-.cal-dow{font-size:9px;text-align:center;color:var(--hint);padding:5px 0;text-transform:uppercase;letter-spacing:0.08em;font-family:var(--mono)}
-.cal-day{aspect-ratio:1;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;position:relative;cursor:default;transition:all 0.2s var(--ease-spring)}
-.cal-day.free{background:var(--olive-dim);color:var(--olive-light)}
-.cal-day.free:hover{background:var(--olive-dim2);transform:scale(1.1)}
-.cal-day.booked{background:var(--clash-dim);color:var(--clash);cursor:pointer}
-.cal-day.booked:hover{background:var(--clash-dim2);transform:scale(1.1)}
-.cal-day.past{background:transparent;color:var(--hint);opacity:0.4}
-.cal-day.today{outline:2px solid var(--rust-light);outline-offset:-2px}
-.cal-day.empty{visibility:hidden}
-.cal-tip{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--surface3);border:1px solid var(--border2);border-radius:var(--radius-sm);padding:6px 10px;font-size:10px;color:var(--text);white-space:nowrap;z-index:50;font-family:var(--mono);pointer-events:none;box-shadow:0 8px 24px rgba(0,0,0,0.4)}
-.cal-day.booked:hover .cal-tip{display:block}
-.cal-legend{display:flex;gap:16px;margin-top:14px;flex-wrap:wrap}
-.cal-legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
-.cal-legend-dot{width:12px;height:12px;border-radius:3px}
-
-/* Checker */
-.checker-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
-.checker-inputs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:12px}
-.input-group{display:flex;flex-direction:column;gap:6px}
-.input-group label{font-size:11px;color:var(--muted);font-family:var(--mono);letter-spacing:0.04em}
-.input-group input[type="date"],.input-group select{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);padding:10px 12px;font-size:13px;width:100%;transition:all 0.2s;color-scheme:dark}
-.input-group input[type="date"]:focus,.input-group select:focus{outline:none;border-color:var(--rust-light);box-shadow:0 0 0 3px var(--rust-dim)}
-.check-btn{width:100%;padding:12px;background:var(--rust);color:#f0ede8;border:none;border-radius:var(--radius-sm);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.25s var(--ease-spring);display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 3px 12px rgba(196,98,45,0.25)}
-.check-btn:hover{background:var(--rust-light);transform:translateY(-2px);box-shadow:0 6px 20px rgba(196,98,45,0.35)}
-.book-nudge{margin-top:10px;text-align:center;font-size:11px;color:var(--hint);font-family:var(--mono)}
-.book-nudge a{color:var(--rust-light);font-weight:700}
-.check-result{margin-top:14px;border-radius:var(--radius-sm);padding:14px 16px;font-size:13px;display:none;line-height:1.6;animation:slideDown 0.3s var(--ease-out)}
-.check-result.ok{display:block;background:var(--olive-dim);border:1px solid var(--olive-border);color:var(--olive-light)}
-.check-result.clash{display:block;background:var(--clash-dim);border:1px solid var(--clash-border);color:var(--clash)}
-.check-result .book-link{display:inline-block;margin-top:10px;background:var(--olive);color:var(--bg);padding:8px 18px;border-radius:var(--radius-sm);font-size:12px;font-weight:700;text-decoration:none;transition:all 0.2s}
-.check-result .book-link:hover{background:var(--olive-light);transform:translateY(-2px);text-decoration:none}
-
-/* Bookings */
-.bookings-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
-.booking-row{display:flex;align-items:flex-start;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);transition:all 0.2s}
-.booking-row:hover{background:var(--surface2);margin:0 -8px;padding-left:8px;padding-right:8px;border-radius:var(--radius-sm)}
-.booking-row:last-child{border-bottom:none;padding-bottom:0}
-.booking-row:first-child{padding-top:0}
-.booking-camera{font-family:var(--mono);font-size:10px;font-weight:700;padding:3px 7px;border-radius:4px;flex-shrink:0}
-.booking-camera.c613{background:var(--cam-c613-dim);color:var(--cam-c613)}
-.booking-camera.c813{background:var(--cam-c813-dim);color:var(--cam-c813)}
-.booking-camera.c533{background:var(--cam-c533-dim);color:var(--cam-c533)}
-.booking-dates{font-family:var(--mono);font-size:12px;color:var(--text);font-weight:700;margin-bottom:2px}
-.booking-meta{font-size:11px;color:var(--muted)}
-.booking-ref{display:inline-block;margin-top:4px;font-family:var(--mono);font-size:9px;color:var(--hint);padding:2px 6px;border:1px solid var(--border);border-radius:3px}
-.booking-status{margin-left:auto;flex-shrink:0;font-size:10px;font-weight:700;font-family:var(--mono);padding:3px 8px;border-radius:20px;background:var(--clash-dim);color:var(--clash);border:1px solid var(--clash-border)}
-.empty-state{text-align:center;padding:28px;color:var(--hint);font-size:13px}
-
-/* Testimonials */
-.testi-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
-.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.testi-bubble{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;transition:all 0.2s}
-.testi-bubble:hover{border-color:var(--rust-border);transform:translateY(-2px)}
-.testi-quote{font-size:12px;color:var(--text);line-height:1.65;margin-bottom:10px;font-style:italic}
-.testi-quote::before{content:'"';color:var(--rust-light);font-size:18px;font-family:Georgia,serif;line-height:0;vertical-align:-5px;margin-right:2px}
-.testi-meta{font-size:10px;color:var(--muted);font-family:var(--mono)}
-.testi-stars{color:var(--rust-light);font-size:11px;margin-bottom:5px}
-.testi-highlight{grid-column:1/-1;background:linear-gradient(135deg,var(--rust-dim2),var(--rust-dim));border-color:var(--rust-border)}
-
-/* Pricing */
-.pricing-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
-.cam-pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
-.cam-price-card{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px;text-align:center;transition:all 0.2s}
-.cam-price-card:hover{border-color:var(--rust-border);transform:translateY(-2px)}
-.cam-price-model{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--rust-light);margin-bottom:5px}
-.cam-price-amount{font-family:var(--mono);font-size:20px;font-weight:700;color:var(--text)}
-.cam-price-unit{font-size:9px;color:var(--muted);margin-top:2px}
-.pricing-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);font-size:13px;transition:all 0.2s}
-.pricing-row:hover{background:var(--surface2);margin:0 -8px;padding-left:8px;padding-right:8px;border-radius:6px}
-.pricing-row:last-child{border-bottom:none}
-.pricing-row-label{color:var(--muted)}
-.pricing-row-val{font-family:var(--mono);font-weight:700;color:var(--rust-light)}
-.pricing-note{margin-top:14px;font-size:11px;color:var(--hint);border-top:1px solid var(--border);padding-top:12px;line-height:1.8}
-
-/* Photo Printing */
-.printing-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
-.print-category{margin-bottom:16px}
-.print-category:last-child{margin-bottom:0}
-.print-category-title{font-size:12px;font-weight:700;color:var(--rust-light);font-family:var(--mono);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid var(--border)}
-.print-items{display:flex;flex-direction:column;gap:6px}
-.print-item{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;font-size:12px}
-.print-item-name{color:var(--muted);flex:1}
-.print-item-prices{display:flex;gap:10px;flex-shrink:0}
-.print-price-col{text-align:right}
-.print-price-label{font-size:9px;color:var(--hint);font-family:var(--mono);margin-bottom:1px}
-.print-price-val{font-family:var(--mono);font-weight:700;color:var(--text);font-size:11px}
-.print-note{font-size:11px;color:var(--hint);margin-top:12px;padding-top:10px;border-top:1px solid var(--border);line-height:1.7}
-
-/* Rental Terms */
-.terms-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
-.terms-item{padding:10px 0;border-bottom:1px solid var(--border);font-size:12px;color:var(--muted);line-height:1.7;display:flex;gap:10px}
-.terms-item:last-child{border-bottom:none;padding-bottom:0}
-.terms-item:first-child{padding-top:0}
-.terms-icon{flex-shrink:0;font-size:13px;margin-top:2px}
-.terms-text strong{color:var(--rust-light);display:block;margin-bottom:2px;font-size:12px}
-
-/* Steps */
-.steps-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px}
-.step-row{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--border);transition:all 0.2s}
-.step-row:hover{background:var(--surface2);margin:0 -8px;padding-left:8px;padding-right:8px;border-radius:var(--radius-sm)}
-.step-row:first-child{padding-top:0}
-.step-row:last-child{border-bottom:none;padding-bottom:0}
-.step-num{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--rust-light);min-width:24px;padding-top:2px}
-.step-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:2px}
-.step-desc{font-size:12px;color:var(--muted)}
-
-/* CTA */
-.cta-banner{background:linear-gradient(135deg,var(--rust-dim2),var(--rust-dim));border:1px solid var(--rust-border);border-radius:var(--radius);padding:32px 24px;text-align:center;margin-bottom:24px;transition:all 0.3s}
-.cta-banner:hover{border-color:rgba(196,98,45,0.5);transform:translateY(-2px)}
-.cta-banner h2{font-size:20px;font-weight:700;color:var(--text);margin-bottom:8px}
-.cta-banner p{font-size:13px;color:var(--muted);margin-bottom:20px}
-.cta-big-btn{display:inline-flex;align-items:center;gap:8px;background:var(--rust);color:#f0ede8;border:none;border-radius:var(--radius);padding:14px 32px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;transition:all 0.25s var(--ease-spring);font-family:var(--sans);box-shadow:0 4px 20px rgba(196,98,45,0.3)}
-.cta-big-btn:hover{background:var(--rust-light);transform:translateY(-3px);text-decoration:none;color:#f0ede8}
-
-/* Owner Panel */
-.owner-toggle{background:none;border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--muted);font-size:11px;padding:9px 14px;cursor:pointer;width:100%;margin-bottom:10px;font-family:var(--mono);transition:all 0.2s;text-align:left;display:flex;align-items:center;gap:8px}
-.owner-toggle:hover{color:var(--text);border-color:var(--border2)}
-.owner-panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;margin-bottom:24px;display:none;animation:slideDown 0.3s var(--ease-out)}
-.owner-panel.open{display:block}
-.owner-lock{display:flex;gap:8px;margin-bottom:14px}
-.owner-lock input[type="password"]{flex:1;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);padding:10px 12px;font-size:13px;font-family:var(--mono);color-scheme:dark}
-.owner-lock input:focus{outline:none;border-color:var(--rust-light);box-shadow:0 0 0 3px var(--rust-dim)}
-.owner-lock button{background:var(--rust);color:#f0ede8;border:none;border-radius:var(--radius-sm);padding:10px 16px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;transition:all 0.2s}
-.owner-lock button:hover{background:var(--rust-light)}
-.owner-form{display:none}
-.owner-form.unlocked{display:block;animation:slideDown 0.3s var(--ease-out)}
-.owner-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
-.owner-grid input,.owner-grid select{background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--text);padding:10px 12px;font-size:12px;width:100%;color-scheme:dark;font-family:var(--sans)}
-.owner-grid input::placeholder{color:var(--hint)}
-.owner-grid input:focus,.owner-grid select:focus{outline:none;border-color:var(--rust-light);box-shadow:0 0 0 3px var(--rust-dim)}
-.owner-add-btn{width:100%;padding:12px;background:var(--rust);color:#f0ede8;border:none;border-radius:var(--radius-sm);font-size:13px;font-weight:700;cursor:pointer;transition:all 0.2s}
-.owner-add-btn:hover{background:var(--rust-light);transform:translateY(-1px)}
-.owner-msg{font-size:12px;margin-top:10px;font-family:var(--mono);min-height:18px}
-.owner-msg.ok{color:var(--olive-light)}
-.owner-msg.err{color:var(--clash)}
-.locked-notice{font-size:12px;color:var(--muted);text-align:center;padding:12px;font-family:var(--mono)}
-
-/* Footer */
-.site-footer{border-top:1px solid var(--border);padding:24px 20px;text-align:center;font-size:11px;color:var(--hint);font-family:var(--mono)}
-.site-footer a{color:var(--muted)}
-.site-footer a:hover{color:var(--rust-light)}
-
-/* Lightbox */
-.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);z-index:999;align-items:center;justify-content:center;cursor:pointer}
-.lightbox.open{display:flex}
-.lightbox img{max-width:90vw;max-height:88vh;border-radius:var(--radius);box-shadow:0 24px 80px rgba(0,0,0,0.6);object-fit:contain}
-.lightbox-close{position:absolute;top:20px;right:24px;color:var(--muted);font-size:24px;cursor:pointer;font-family:var(--mono);background:var(--surface2);border:1px solid var(--border);border-radius:50%;width:36px;height:36px;display:flex;align-items:center;justify-content:center;transition:all 0.2s}
-.lightbox-close:hover{color:var(--text);border-color:var(--border2)}
-
-/* Sidebar overlay on mobile */
-.sidebar-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:150;backdrop-filter:blur(4px)}
-.sidebar-overlay.open{display:block}
-
-/* ── RESPONSIVE ── */
-@media(max-width:860px){
-  :root{--sidebar:220px}
+/* MOBILE BOOK BAR */
+.mbar{display:none}
+@media(max-width:760px){
+  .mbar{display:flex;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(28,28,26,.96);border-top:1px solid var(--border)}
+  .mbar .btn{flex:1}
 }
-@media(max-width:680px){
-  .layout{grid-template-columns:1fr}
-  .sidebar{position:fixed;top:0;left:-280px;width:280px;height:100vh;z-index:160;transition:left 0.3s var(--ease-out);border-right:1px solid var(--border2)}
-  .sidebar.mobile-open{left:0}
-  .header-sidebar-toggle{display:flex;align-items:center;gap:6px}
-  .main{padding:0 16px 60px}
-  .status-row{grid-template-columns:1fr 1fr}
-  .status-row .stat-pill:last-child{grid-column:1/-1}
-  .checker-inputs{grid-template-columns:1fr}
-  .testi-grid{grid-template-columns:1fr}
-  .cam-pricing-grid{grid-template-columns:1fr}
-  .owner-grid{grid-template-columns:1fr}
-  .cam-card-header{flex-direction:column}
-  .cam-badge{align-self:flex-start}
-}
-@media(max-width:360px){
-  .status-row{grid-template-columns:1fr}
-}
+
+/* CHATBOT */
+.chat-fab{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--rust);color:#fff;border:none;cursor:pointer;font-size:26px;box-shadow:0 10px 30px rgba(0,0,0,.45);transition:transform .2s var(--ease)}
+.chat-fab:hover{transform:scale(1.06)}
+.chat-fab .dot{position:absolute;top:6px;right:6px;width:12px;height:12px;border-radius:50%;background:var(--olive);border:2px solid var(--rust)}
+@media(max-width:760px){.chat-fab{bottom:84px;right:16px}}
+.chat{position:fixed;right:20px;bottom:92px;z-index:61;width:min(390px,calc(100vw - 24px));height:min(600px,calc(100vh - 120px));background:var(--surface);border:1px solid var(--border2);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.55);display:flex;flex-direction:column;overflow:hidden;opacity:0;transform:translateY(12px) scale(.98);pointer-events:none;transition:opacity .2s,transform .25s var(--ease)}
+.chat.open{opacity:1;transform:none;pointer-events:auto}
+@media(max-width:760px){.chat{right:12px;left:12px;width:auto;bottom:12px;height:calc(100vh - 24px);height:calc(100dvh - 24px)}}
+.chat-head{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--border);background:var(--surface2)}
+.chat-head .brand-mark{flex-shrink:0}
+.chat-head strong{display:block;font-size:15px}
+.chat-head small{color:var(--muted);font-size:12px}
+.chat-head .icon-btn{margin-left:auto}
+.chat-log{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:88%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.5;animation:pop .25s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.msg.bot{background:var(--surface2);border:1px solid var(--border);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.user{background:var(--rust);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.msg .src{display:block;margin-top:8px;font-size:11px;color:var(--hint);font-family:var(--mono)}
+.msg .btn{margin-top:10px}
+.msg ul{margin:6px 0 0 18px}
+.typing{display:inline-flex;gap:4px}
+.typing i{width:6px;height:6px;border-radius:50%;background:var(--muted);animation:blink 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes blink{0%,80%,100%{opacity:.25}40%{opacity:1}}
+.chips{display:flex;gap:6px;flex-wrap:wrap;padding:0 16px 10px}
+.chips button{background:var(--bg);border:1px solid var(--border2);border-radius:999px;padding:6px 11px;font-size:12.5px;cursor:pointer;color:var(--text)}
+.chips button:hover{border-color:var(--rust-border);color:var(--rust-light)}
+.chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--border)}
+.chat-form input{flex:1;background:var(--bg);border:1px solid var(--border2);border-radius:999px;padding:11px 16px;min-height:44px}
+.chat-form button{width:44px;height:44px;border-radius:50%;background:var(--rust);border:none;color:#fff;cursor:pointer;font-size:18px}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--olive);color:#111;font-weight:700;font-size:13px;padding:8px 16px;border-radius:999px;z-index:80;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 
-<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
-
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <div class="lightbox-close" onclick="closeLightbox()">✕</div>
-  <img id="lightboxImg" src="" alt="Sample shot">
-</div>
-
-<header class="site-header">
-  <div class="site-header-inner">
-    <div class="logo-mark" aria-hidden="true">📷</div>
-    <div>
-      <div class="site-name">KlexDigirents</div>
-      <div class="site-tagline">Digicam rentals · Manila, Sta. Cruz</div>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">📷</span>KlexDigirents</a>
+    <div class="nav-links">
+      <a href="#availability">Availability</a>
+      <a href="#cameras">Cameras</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#location">Meetup</a>
     </div>
-    <button class="header-sidebar-toggle" onclick="toggleSidebar()" id="sidebarToggleBtn">☰ Info</button>
+    <a href="#availability" class="btn btn-primary btn-sm">Check dates</a>
   </div>
-</header>
+</nav>
 
-<div class="layout">
-
-  <!-- ════ SIDEBAR ════ -->
-  <aside class="sidebar" id="sidebar">
-
-    <!-- Sample Shots -->
-    <div class="sidebar-section">
-      <div class="sidebar-label">Sample shots</div>
-      <div class="sb-photos-tabs">
-        <button class="sb-photo-tab active" onclick="switchPhotoTab('c613',this)">C613</button>
-        <button class="sb-photo-tab" onclick="switchPhotoTab('c533',this)">C533</button>
-        <button class="sb-photo-tab" onclick="switchPhotoTab('c813',this)">C813</button>
-      </div>
-      <div class="sb-photos-grid" id="sbPhotosGrid"></div>
-      <a href="https://drive.google.com/drive/folders/1_d6A2GlrEht-iIQZR2RQnN6Ye2scRb_J?usp=drive_link" target="_blank" class="sb-drive-link">
-        📁 View all shots on Drive ↗
-      </a>
-    </div>
-
-    <!-- FAQ -->
-    <div class="sidebar-section">
-      <div class="sidebar-label">FAQ</div>
-
-      <div class="sb-faq-item">
-        <button class="sb-faq-q" onclick="toggleSbFaq(this)">How much per day? <span class="arr">▼</span></button>
-        <div class="sb-faq-a"><strong>C613, C533 & C813 — all ₱200</strong> per day + ₱150 refundable deposit. ₱100 reservation fee to lock your slot.</div>
-      </div>
-      <div class="sb-faq-item">
-        <button class="sb-faq-q" onclick="toggleSbFaq(this)">What IDs are accepted? <span class="arr">▼</span></button>
-        <div class="sb-faq-a">Any valid government ID. <strong>Student ID preferred</strong> if you're a student — school ID, PhilSys, driver's license, postal ID, UMID.</div>
-      </div>
-      <div class="sb-faq-item">
-        <button class="sb-faq-q" onclick="toggleSbFaq(this)">What if it's returned late? <span class="arr">▼</span></button>
-        <div class="sb-faq-a">Return = same hour the next day. Late fee: <strong>₱50/hr or ₱100 half-day</strong> beyond agreed time.</div>
-      </div>
-      <div class="sb-faq-item">
-        <button class="sb-faq-q" onclick="toggleSbFaq(this)">Camera damaged or lost? <span class="arr">▼</span></button>
-        <div class="sb-faq-a">Functional damage = renter covers repair. Cosmetic wear not charged. <strong>Lost/stolen = ₱3,500</strong> full replacement.</div>
-      </div>
-      <div class="sb-faq-item">
-        <button class="sb-faq-q" onclick="toggleSbFaq(this)">Can I cancel or reschedule? <span class="arr">▼</span></button>
-        <div class="sb-faq-a"><strong>Within 24 hrs</strong> of paying reservation fee → full refund or free reschedule. After 48 hrs → partial refund. No-show → deposit forfeited.</div>
-      </div>
-      <div class="sb-faq-item">
-        <button class="sb-faq-q" onclick="toggleSbFaq(this)">Can someone else pick up? <span class="arr">▼</span></button>
-        <div class="sb-faq-a">Yes, just inform us in advance. They must bring a valid ID. Renter stays responsible for the equipment.</div>
-      </div>
-      <div class="sb-faq-item">
-        <button class="sb-faq-q" onclick="toggleSbFaq(this)">Do you deliver? <span class="arr">▼</span></button>
-        <div class="sb-faq-a">Primarily pickup in Sta. Cruz. Outside Manila? <strong>Delivery fee shouldered by renter.</strong></div>
-      </div>
-      <div class="sb-faq-item">
-        <button class="sb-faq-q" onclick="toggleSbFaq(this)">What's in the kit? <span class="arr">▼</span></button>
-        <div class="sb-faq-a">Camera · Battery · Memory Card · Card Reader · Pouch · Strap · Charger. Extra battery +₱30. Note: card reader works best with iPad/laptop.</div>
-      </div>
-    </div>
-
-    <!-- Location & Hours -->
-    <div class="sidebar-section">
-      <div class="sidebar-label">Meetup & hours</div>
-      <div class="sb-location">
-        <div class="sb-location-name">📍 In front of TKL Steel Corp Bldg</div>
-        <div class="sb-location-sub">Manila, Sta. Cruz · Near Blumentritt Station (LRT-1)</div>
-        <a href="https://maps.google.com/?q=Blumentritt+Station+Manila" target="_blank" class="sb-map-link">Open in Maps ↗</a>
-      </div>
-      <div class="sb-hours-grid" style="margin-top:10px">
-        <div class="sb-hour-box">
-          <div class="sb-hour-label">Pickup</div>
-          <div class="sb-hour-val">10AM–7PM</div>
-        </div>
-        <div class="sb-hour-box">
-          <div class="sb-hour-label">Return</div>
-          <div class="sb-hour-val">10AM–7PM</div>
-        </div>
-      </div>
-      <div class="sb-night-notice" style="margin-top:10px">
-        🌙 Owner works night shift — responses may be delayed. Will accommodate as soon as available. Bear with the sleeping schedule!
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div class="sidebar-section">
-      <div class="sidebar-label">Contact</div>
-      <div class="sb-contact-row">
-        <span class="sb-contact-label">📘 Facebook</span>
-        <a href="https://www.facebook.com/KemKlex.Co" target="_blank" class="sb-contact-val">KemKlex.Co</a>
-      </div>
-      <div class="sb-contact-row">
-        <span class="sb-contact-label">💙 Maya</span>
-        <span class="sb-contact-val">09516427351</span>
-      </div>
-      <div class="sb-contact-row">
-        <span class="sb-contact-label">💚 Mari Bank</span>
-        <span class="sb-contact-val">17557472266</span>
-      </div>
-      <div class="sb-contact-row">
-        <span class="sb-contact-label">🟡 GoTyme</span>
-        <span class="sb-contact-val">010591624320</span>
-      </div>
-    </div>
-
-  </aside>
-
-  <!-- ════ MAIN ════ -->
-  <main class="main">
-
-    <section class="hero">
-      <div class="hero-eyebrow">📍 Manila, Sta. Cruz · Near Blumentritt Station</div>
-      <h1>Are the digicams <span id="heroWord">available</span>?</h1>
-      <p class="hero-sub">Real-time availability for Kodak C613, C813, and C533. Check your dates and book in minutes.</p>
-    </section>
-
-    <div class="status-row" role="status" aria-live="polite">
-      <div class="stat-pill"><div class="stat-pill-label">Available Today</div><div class="stat-pill-val green" id="statToday">—</div></div>
-      <div class="stat-pill"><div class="stat-pill-label">Next free slot</div><div class="stat-pill-val" id="statNextFree">—</div></div>
-      <div class="stat-pill"><div class="stat-pill-label">Total bookings</div><div class="stat-pill-val amber" id="statCount">—</div></div>
-    </div>
-
-    <div class="camera-selector" role="tablist">
-      <button class="cam-tab active" role="tab" aria-selected="true" onclick="selectCamera('c613')" id="tab-c613"><span class="cam-tab-name">C613</span><span class="cam-tab-mp">6.2 MP</span><span class="cam-tab-status available" id="status-c613"></span></button>
-      <button class="cam-tab" role="tab" aria-selected="false" onclick="selectCamera('c533')" id="tab-c533"><span class="cam-tab-name">C533</span><span class="cam-tab-mp">5.0 MP</span><span class="cam-tab-status available" id="status-c533"></span></button>
-      <button class="cam-tab" role="tab" aria-selected="false" onclick="selectCamera('c813')" id="tab-c813"><span class="cam-tab-name">C813</span><span class="cam-tab-mp">8.2 MP</span><span class="cam-tab-status available" id="status-c813"></span></button>
-    </div>
-
-    <div class="cam-card">
-      <div class="cam-card-header">
-        <div class="cam-icon" aria-hidden="true">📸</div>
-        <div class="cam-info">
-          <div class="cam-name">Kodak EasyShare <span class="cam-model" id="camModel">C613</span></div>
-          <div class="cam-price" id="camPrice">₱200 / day</div>
-          <div class="cam-specs" id="camSpecs">6.2 MP · 3× Optical Zoom · 2.4" LCD</div>
-        </div>
-        <span class="cam-badge available" id="camBadge">● Available</span>
-      </div>
-      <div class="cam-includes">
-        <span class="cam-tag">Battery</span><span class="cam-tag">Memory Card</span><span class="cam-tag">Card Reader</span><span class="cam-tag">Pouch</span><span class="cam-tag">Strap</span><span class="cam-tag">Charger</span>
-      </div>
-    </div>
-
-    <div class="perfect-for" id="perfectFor">
-      <div class="perfect-for-icon" id="perfectForIcon">⚡</div>
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
       <div>
-        <div class="perfect-for-label">Perfect for</div>
-        <div class="perfect-for-title" id="perfectForTitle">Flash Photography</div>
-        <div class="perfect-for-desc" id="perfectForDesc"></div>
+        <span class="label">📍 Sta. Cruz, Manila · near Blumentritt LRT-1</span>
+        <h1>Y2K digicams for <em>₱200 a day.</em></h1>
+        <p>Rent a Kodak EasyShare C613, C533 or C813 for parties, trips and gigs. Check your dates, book in under 3 minutes, and meet up near Blumentritt Station.</p>
+        <div class="hero-ctas">
+          <a href="#availability" class="btn btn-primary">Check my dates</a>
+          <button class="btn btn-ghost" type="button" data-open-chat>💬 Ask KlexBot</button>
+        </div>
+        <div class="hero-facts">
+          <div><strong>₱200/day</strong>all 3 models</div>
+          <div><strong>Full kit</strong>card, reader, charger</div>
+          <div><strong>10AM–7PM</strong>pickup &amp; return</div>
+        </div>
+      </div>
+      <div class="card today-card" aria-live="polite">
+        <h3>Available today · <span id="todayLabel"></span></h3>
+        <div id="todayRows"></div>
+        <p class="data-note" id="dataNote">Loading schedule…</p>
       </div>
     </div>
+  </section>
 
-    <section class="cal-card">
-      <div class="section-label">Availability calendar</div>
-      <div class="cal-nav">
-        <button class="cal-nav-btn" onclick="changeMonth(-1)">←</button>
-        <span class="cal-month-label" id="calLabel"></span>
-        <button class="cal-nav-btn" onclick="changeMonth(1)">→</button>
-      </div>
-      <div class="cal-grid" id="calGrid" role="grid"></div>
-      <div class="cal-legend">
-        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--olive-dim);border:1px solid var(--olive-border)"></div>Available</div>
-        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--clash-dim);border:1px solid var(--clash-border)"></div>Booked</div>
-        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--surface2);opacity:0.5"></div>Past</div>
-        <div class="cal-legend-item"><div class="cal-legend-dot" style="outline:2px solid var(--rust-light);outline-offset:-2px;border-radius:3px;background:transparent"></div>Today</div>
-      </div>
-    </section>
-
-    <section class="checker-card">
-      <div class="section-label">Check your dates</div>
-      <div class="checker-inputs">
-        <div class="input-group"><label>Camera</label><select id="checkCamera"><option value="c613">C613 (6.2 MP)</option><option value="c533">C533 (5.0 MP)</option><option value="c813">C813 (8.2 MP)</option></select></div>
-        <div class="input-group"><label>Rent start</label><input type="date" id="checkStart"></div>
-        <div class="input-group"><label>Rent end</label><input type="date" id="checkEnd"></div>
-      </div>
-      <button class="check-btn" onclick="checkAvailability()">🔍 Check availability</button>
-      <div class="book-nudge">Ready? → <a href="https://forms.gle/Sw66evZ3kGFAxv3Q8" target="_blank">Open booking form ↗</a></div>
-      <div class="check-result" id="checkResult" role="status" aria-live="polite"></div>
-    </section>
-
-    <section class="bookings-card">
-      <div class="section-label">Upcoming bookings</div>
-      <div id="bookingList"></div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testi-card">
-      <div class="section-label">What renters say</div>
-      <div class="testi-grid">
-        <div class="testi-bubble testi-highlight">
-          <div class="testi-stars">★★★★★</div>
-          <div class="testi-quote">100% solid mima napaka ganda grabe parang walang makakatalo sa camera mo — SOBRANG GANDA E WORTH IT. Camera so good this renter refused to return the deposit 😂</div>
-          <div class="testi-meta">Verified renter</div>
+  <!-- AVAILABILITY -->
+  <section id="availability">
+    <div class="wrap">
+      <span class="label">Availability</span>
+      <h2>Pick your dates.</h2>
+      <p class="sub">Tap a pickup day, then a return day. Return is the same hour the next day, so a 1-day rental is pickup Mon → return Tue.</p>
+      <div class="avail-grid">
+        <div class="card">
+          <div class="seg" role="group" aria-label="Camera filter" id="calFilter">
+            <button type="button" data-cam="all" aria-pressed="true">All cameras</button>
+            <button type="button" data-cam="c613" aria-pressed="false">C613</button>
+            <button type="button" data-cam="c533" aria-pressed="false">C533</button>
+            <button type="button" data-cam="c813" aria-pressed="false">C813</button>
+          </div>
+          <div class="cal-head">
+            <button class="icon-btn" type="button" id="prevMonth" aria-label="Previous month">←</button>
+            <strong id="calLabel"></strong>
+            <button class="icon-btn" type="button" id="nextMonth" aria-label="Next month">→</button>
+          </div>
+          <div class="cal" id="cal" role="grid" aria-label="Availability calendar"></div>
+          <div class="legend">
+            <span><i style="background:var(--olive-dim);border-color:var(--olive-border)"></i>Free</span>
+            <span id="legendSome"><i style="background:var(--amber-dim);border-color:var(--amber-border)"></i>Some models free</span>
+            <span><i style="background:var(--clash-dim);border-color:var(--clash-border)"></i>Fully booked</span>
+          </div>
         </div>
-        <div class="testi-bubble">
-          <div class="testi-stars">★★★★★</div>
-          <div class="testi-quote">The camera was easy to use, quality was great, and I really enjoyed using it. Will definitely rent again!</div>
-          <div class="testi-meta">Verified renter</div>
-        </div>
-        <div class="testi-bubble">
-          <div class="testi-stars">★★★★★</div>
-          <div class="testi-quote">Very good quality for an affordable rent fee. Will def recommend to my friends!</div>
-          <div class="testi-meta">Verified renter</div>
-        </div>
-        <div class="testi-bubble">
-          <div class="testi-stars">★★★★★</div>
-          <div class="testi-quote">Thank you for the smooth and very considerate transaction.</div>
-          <div class="testi-meta">Verified renter</div>
+        <div class="card">
+          <form id="checker" novalidate>
+            <div class="form-row">
+              <div class="field"><label for="ckStart">Pickup date</label><input type="date" id="ckStart" required></div>
+              <div class="field"><label for="ckEnd">Return date</label><input type="date" id="ckEnd" required></div>
+            </div>
+            <div class="field" style="margin-bottom:12px">
+              <label for="ckCam">Camera</label>
+              <select id="ckCam">
+                <option value="any">Any available</option>
+                <option value="c613">C613 · 6.2 MP · flash shots</option>
+                <option value="c533">C533 · 5.0 MP · sunny days</option>
+                <option value="c813">C813 · 8.2 MP · night shots</option>
+              </select>
+            </div>
+            <label style="display:flex;gap:8px;align-items:center;font-size:14px;color:var(--muted);margin-bottom:14px">
+              <input type="checkbox" id="ckBattery"> Add extra battery (+₱30)
+            </label>
+            <button class="btn btn-primary" type="submit" style="width:100%">Check availability</button>
+          </form>
+          <div class="check-out" id="checkOut" role="status" aria-live="polite"></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Pricing -->
-    <section class="pricing-card">
-      <div class="section-label">Pricing</div>
-      <div class="cam-pricing-grid">
-        <div class="cam-price-card"><div class="cam-price-model">C613</div><div class="cam-price-amount">₱200</div><div class="cam-price-unit">per day · 6.2 MP</div></div>
-        <div class="cam-price-card"><div class="cam-price-model">C533</div><div class="cam-price-amount">₱200</div><div class="cam-price-unit">per day · 5.0 MP</div></div>
-        <div class="cam-price-card"><div class="cam-price-model">C813</div><div class="cam-price-amount">₱200</div><div class="cam-price-unit">per day · 8.2 MP</div></div>
+  <!-- CAMERAS -->
+  <section id="cameras">
+    <div class="wrap">
+      <span class="label">The cameras</span>
+      <h2>Three Kodaks, three vibes.</h2>
+      <p class="sub">Same price, different strengths. Not sure which one? Ask KlexBot “which camera for a night party?”</p>
+      <div class="cams-grid" id="camCards"></div>
+      <div class="kit">
+        <strong style="color:var(--text)">Every rental includes</strong>
+        <div class="tags"><span class="tag">Camera</span><span class="tag">Battery</span><span class="tag">Memory card</span><span class="tag">Card reader</span><span class="tag">Pouch</span><span class="tag">Strap</span><span class="tag">Charger</span></div>
+        <p style="margin-top:12px">📁 <a href="https://drive.google.com/drive/folders/1_d6A2GlrEht-iIQZR2RQnN6Ye2scRb_J?usp=drive_link" target="_blank" rel="noopener">See real sample shots on Google Drive ↗</a></p>
       </div>
-      <div class="pricing-row"><span class="pricing-row-label">Reservation fee</span><span class="pricing-row-val">₱100</span></div>
-      <div class="pricing-row"><span class="pricing-row-label">Security deposit</span><span class="pricing-row-val">₱150 (refundable)</span></div>
-      <div class="pricing-row"><span class="pricing-row-label">Late return</span><span class="pricing-row-val">₱100 half-day / ₱50 per hr</span></div>
-      <div class="pricing-row"><span class="pricing-row-label">Lost / stolen</span><span class="pricing-row-val">₱3,500 replacement</span></div>
-      <div class="pricing-row"><span class="pricing-row-label">Extra battery</span><span class="pricing-row-val">+₱30 (request in form)</span></div>
-      <div class="pricing-note">
-        <strong style="color:var(--rust-light)">Payment:</strong> 💙 Maya 09516427351 · 💚 Mari Bank 17557472266 · 🟡 GoTyme 010591624320<br>
-        Return time = same hour as pickup the next day.
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Photo Printing -->
-    <section class="printing-card">
-      <div class="section-label">📸 Add-on: Photo Printing</div>
-      <p style="font-size:12px;color:var(--muted);margin-bottom:16px;line-height:1.65">Polaroid-inspired &amp; photocard prints. Send files via <strong style="color:var(--rust-light)">Messenger or Gmail</strong>.</p>
-      <div class="print-category">
-        <div class="print-category-title">Polaroid Inspired</div>
-        <div class="print-items">
-          <div class="print-item"><span class="print-item-name">Instax Mini 5.3×8.63cm</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Plain</div><div class="print-price-val">₱60/10 · ₱115/20</div></div><div class="print-price-col"><div class="print-price-label">W/BG</div><div class="print-price-val">₱65/10 · ₱130/20</div></div></div></div>
-          <div class="print-item"><span class="print-item-name">Instax Square 7.11×8.64cm</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Plain</div><div class="print-price-val">₱50/8 · ₱95/16</div></div><div class="print-price-col"><div class="print-price-label">W/BG</div><div class="print-price-val">₱55/8 · ₱105/16</div></div></div></div>
-          <div class="print-item"><span class="print-item-name">Instax Wide 10.8×8.63cm</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Plain</div><div class="print-price-val">₱45/5 · ₱85/10</div></div><div class="print-price-col"><div class="print-price-label">W/BG</div><div class="print-price-val">₱50/5 · ₱95/10</div></div></div></div>
-          <div class="print-item"><span class="print-item-name">Photobooth 11.7×15.2cm</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Plain</div><div class="print-price-val">₱30/1 · ₱55/2</div></div><div class="print-price-col"><div class="print-price-label">W/BG</div><div class="print-price-val">₱35/1 · ₱65/2</div></div></div></div>
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <span class="label">Pricing</span>
+      <h2>Simple, one-price rentals.</h2>
+      <div class="price-grid">
+        <div class="card">
+          <div class="big-price">₱200 <small>/ day · any model</small></div>
+          <div class="rows" style="margin-top:12px">
+            <div><span>Reservation fee (locks your slot)</span><span>₱100</span></div>
+            <div><span>Security deposit (paid at pickup, refundable)</span><span>₱150</span></div>
+            <div><span>Extra battery</span><span>+₱30</span></div>
+            <div><span>Late return</span><span>₱50/hr · ₱100 half-day</span></div>
+            <div><span>Lost or stolen</span><span>₱3,500</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <strong>Pay the ₱100 reservation fee</strong>
+          <p style="color:var(--muted);font-size:13.5px;margin:4px 0 8px">Send it, screenshot the receipt, then attach it to the booking form.</p>
+          <div class="pay"><span>💙 Maya</span><span><code>09516427351</code> <button class="copy" type="button" data-copy="09516427351">Copy</button></span></div>
+          <div class="pay"><span>💚 MariBank</span><span><code>17557472266</code> <button class="copy" type="button" data-copy="17557472266">Copy</button></span></div>
+          <div class="pay"><span>🟡 GoTyme</span><span><code>010591624320</code> <button class="copy" type="button" data-copy="010591624320">Copy</button></span></div>
         </div>
       </div>
-      <div class="print-category">
-        <div class="print-category-title">Photocard &amp; Strips</div>
-        <div class="print-items">
-          <div class="print-item"><span class="print-item-name">Photocard 5.5×8.5cm</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Front</div><div class="print-price-val">₱60/10 · ₱115/22</div></div><div class="print-price-col"><div class="print-price-label">B2B</div><div class="print-price-val">₱85/10 · ₱135/22</div></div></div></div>
-          <div class="print-item"><span class="print-item-name">Cute Size 5×7cm</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Price</div><div class="print-price-val">₱50/10 · ₱95/20</div></div></div></div>
-          <div class="print-item"><span class="print-item-name">Photo Strips 2×6in</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Plain</div><div class="print-price-val">₱45/5 · ₱85/10</div></div><div class="print-price-col"><div class="print-price-label">W/BG</div><div class="print-price-val">₱50/5 · ₱95/10</div></div></div></div>
-          <div class="print-item"><span class="print-item-name">Camera Strips 2×7in</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Price</div><div class="print-price-val">₱50 / 4pcs</div></div></div></div>
-          <div class="print-item"><span class="print-item-name">Mini Strips 3×8.4cm</span><div class="print-item-prices"><div class="print-price-col"><div class="print-price-label">Plain</div><div class="print-price-val">₱15/2 · ₱25/4</div></div><div class="print-price-col"><div class="print-price-label">W/BG</div><div class="print-price-val">₱20/2 · ₱45/4</div></div></div></div>
+      <details class="card print">
+        <summary>📸 Add-on: photo printing (Instax-style, photocards, strips)</summary>
+        <div class="table-scroll">
+          <table class="ptable">
+            <thead><tr><th>Size</th><th>Plain / Front</th><th>With BG / B2B</th></tr></thead>
+            <tbody>
+              <tr><td>Instax Mini 5.3×8.63cm</td><td>₱60/10 · ₱115/20</td><td>₱65/10 · ₱130/20</td></tr>
+              <tr><td>Instax Square 7.11×8.64cm</td><td>₱50/8 · ₱95/16</td><td>₱55/8 · ₱105/16</td></tr>
+              <tr><td>Instax Wide 10.8×8.63cm</td><td>₱45/5 · ₱85/10</td><td>₱50/5 · ₱95/10</td></tr>
+              <tr><td>Photobooth 11.7×15.2cm</td><td>₱30/1 · ₱55/2</td><td>₱35/1 · ₱65/2</td></tr>
+              <tr><td>Photocard 5.5×8.5cm</td><td>₱60/10 · ₱115/22</td><td>B2B ₱85/10 · ₱135/22</td></tr>
+              <tr><td>Cute size 5×7cm</td><td>₱50/10 · ₱95/20</td><td>—</td></tr>
+              <tr><td>Photo strips 2×6in</td><td>₱45/5 · ₱85/10</td><td>₱50/5 · ₱95/10</td></tr>
+              <tr><td>Camera strips 2×7in</td><td>₱50/4pcs</td><td>—</td></tr>
+              <tr><td>Mini strips 3×8.4cm</td><td>₱15/2 · ₱25/4</td><td>₱20/2 · ₱45/4</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="color:var(--muted);font-size:13px;margin-top:10px">Send your files via <a href="https://m.me/KemKlex.Co" target="_blank" rel="noopener">Messenger</a> or Gmail. Ask for the design overview.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- HOW TO RENT -->
+  <section id="how">
+    <div class="wrap">
+      <span class="label">How to rent</span>
+      <h2>Four steps, about 3 minutes.</h2>
+      <div class="steps">
+        <div class="card step"><h3>Check your dates</h3><p>Use the calendar above or ask KlexBot.</p></div>
+        <div class="card step"><h3>Pay ₱100 reservation</h3><p>Maya, MariBank or GoTyme. Screenshot the receipt.</p></div>
+        <div class="card step"><h3>Fill the booking form</h3><p>Your details, a valid ID photo, and the receipt.</p></div>
+        <div class="card step"><h3>Meet up &amp; shoot</h3><p>Bring your ID + ₱150 deposit. Return the next day, same hour.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <span class="label">FAQ &amp; rental terms</span>
+      <h2>Questions, answered.</h2>
+      <div class="faq-tools">
+        <input type="search" id="faqSearch" placeholder="Search e.g. deposit, late, ID, deliver…" aria-label="Search FAQ">
+        <div class="faq-cats" id="faqCats"></div>
+      </div>
+      <div class="faq-list" id="faqList"></div>
+      <p class="faq-empty" id="faqEmpty">No match. <button class="btn btn-ghost btn-sm" type="button" data-open-chat>Ask KlexBot instead</button></p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="wrap">
+      <span class="label">Reviews</span>
+      <h2>What renters say.</h2>
+      <div class="reviews">
+        <div class="card"><div class="stars">★★★★★</div><blockquote>“100% solid, napaka ganda grabe. Parang walang makakatalo sa camera mo. SOBRANG GANDA, worth it!”</blockquote><cite>Verified renter</cite></div>
+        <div class="card"><div class="stars">★★★★★</div><blockquote>“Easy to use, great quality, and I really enjoyed it. Will definitely rent again!”</blockquote><cite>Verified renter</cite></div>
+        <div class="card"><div class="stars">★★★★★</div><blockquote>“Very good quality for an affordable rent fee. Smooth and very considerate transaction.”</blockquote><cite>Verified renter</cite></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section id="location">
+    <div class="wrap">
+      <span class="label">Meetup &amp; contact</span>
+      <h2>Pickup near Blumentritt.</h2>
+      <div class="loc-grid">
+        <div class="card">
+          <strong>📍 In front of TKL Steel Corp Bldg</strong>
+          <p style="color:var(--muted);font-size:14px">Sta. Cruz, Manila · near Blumentritt Station (LRT-1)</p>
+          <div class="rows" style="margin-top:10px">
+            <div><span>Pickup</span><span>10AM – 7PM</span></div>
+            <div><span>Return</span><span>10AM – 7PM</span></div>
+          </div>
+          <a class="btn btn-ghost btn-sm" style="margin-top:12px" href="https://maps.google.com/?q=Blumentritt+Station+Manila" target="_blank" rel="noopener">Open in Google Maps ↗</a>
+        </div>
+        <div class="card">
+          <strong>Message us</strong>
+          <p style="color:var(--muted);font-size:14px;margin-bottom:12px">Facebook / Messenger: KemKlex.Co</p>
+          <a class="btn btn-primary btn-sm" href="https://m.me/KemKlex.Co" target="_blank" rel="noopener">💬 Open Messenger</a>
+          <div class="notice">🌙 The owner works night shift, so replies may take a few hours. KlexBot answers instantly 24/7.</div>
         </div>
       </div>
-      <div class="print-note">Send via <strong style="color:var(--rust-light)">FB: KemKlex.Co</strong> or Gmail. Designs available — ask for the overview!</div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Rental Terms -->
-    <section class="terms-card">
-      <div class="section-label">Rental Terms</div>
-      <div class="terms-item"><span class="terms-icon">📋</span><div class="terms-text"><strong>Full responsibility</strong>Renter is responsible for all items: Camera, Battery, Memory Card, Card Reader, Pouch, Strap, Charger. Return everything in the same condition.</div></div>
-      <div class="terms-item"><span class="terms-icon">🕐</span><div class="terms-text"><strong>Return time</strong>Same hour the next day (e.g. picked up 10 PM → return by 10 PM tomorrow). Late fee: ₱50/hr or ₱100 half-day.</div></div>
-      <div class="terms-item"><span class="terms-icon">💰</span><div class="terms-text"><strong>Security deposit</strong>₱150 collected on pickup. Refunded in full upon timely return in good condition.</div></div>
-      <div class="terms-item"><span class="terms-icon">⚠️</span><div class="terms-text"><strong>Damage & loss</strong>Functional damage = renter pays repair/replacement. Cosmetic wear not charged. Lost or stolen = ₱3,500.</div></div>
-      <div class="terms-item"><span class="terms-icon">🚫</span><div class="terms-text"><strong>No sub-renting</strong>Do not sub-rent, modify, or attempt to repair the equipment. Use only for its intended purpose.</div></div>
-      <div class="terms-item"><span class="terms-icon">❌</span><div class="terms-text"><strong>Cancellation</strong>Free cancel/reschedule within 24 hrs of reservation fee. After 48 hrs → partial refund. No-show → deposit forfeited.</div></div>
-    </section>
-
-    <!-- How to Rent -->
-    <section class="steps-card">
-      <div class="section-label">How to rent</div>
-      <div class="step-row"><span class="step-num">01</span><div><div class="step-title">Check availability</div><div class="step-desc">Use the calendar or date checker above.</div></div></div>
-      <div class="step-row"><span class="step-num">02</span><div><div class="step-title">Fill the booking form</div><div class="step-desc">Submit your details, valid ID photo, and ₱100 reservation fee screenshot.</div></div></div>
-      <div class="step-row"><span class="step-num">03</span><div><div class="step-title">Get confirmed</div><div class="step-desc">Receive your booking reference and meetup details.</div></div></div>
-      <div class="step-row"><span class="step-num">04</span><div><div class="step-title">Meet up & shoot!</div><div class="step-desc">Bring valid ID + ₱150 deposit. Return everything on time.</div></div></div>
-    </section>
-
-    <div class="cta-banner">
+  <section class="cta">
+    <div class="wrap">
       <h2>Ready to shoot?</h2>
-      <p>Takes less than 3 minutes. Confirmation sent right after.</p>
-      <a href="https://forms.gle/Sw66evZ3kGFAxv3Q8" target="_blank" class="cta-big-btn">📋 &nbsp;Open booking form</a>
-    </div>
-
-    <button class="owner-toggle" onclick="toggleOwnerPanel()" id="ownerToggleBtn">🔒 Owner: manage bookings</button>
-    <div class="owner-panel" id="ownerPanel">
-      <div class="section-label">Owner panel</div>
-      <div class="owner-lock" id="ownerLockRow">
-        <input type="password" id="ownerPass" placeholder="Enter owner password" onkeydown="if(event.key==='Enter')unlockOwner()">
-        <button onclick="unlockOwner()">Unlock</button>
-      </div>
-      <div class="locked-notice" id="lockedNotice">Enter password to add or remove bookings.</div>
-      <div class="owner-form" id="ownerForm">
-        <div class="owner-grid">
-          <div class="input-group"><label>Camera *</label><select id="addCamera"><option value="c613">C613</option><option value="c533">C533</option><option value="c813">C813</option></select></div>
-          <div class="input-group"><label>Renter name *</label><input type="text" id="addName" placeholder="e.g. Maria Santos"></div>
-          <div class="input-group"><label>Contact</label><input type="text" id="addContact" placeholder="09xxxxxxxxx"></div>
-          <div class="input-group"><label>Start date *</label><input type="date" id="addStart"></div>
-          <div class="input-group"><label>End date *</label><input type="date" id="addEnd"></div>
-          <div class="input-group"><label>Booking ref</label><input type="text" id="addRef" placeholder="KDR-20260618-X7A2"></div>
-        </div>
-        <button class="owner-add-btn" onclick="addBooking()">+ Add booking</button>
-        <div class="owner-msg" id="ownerMsg"></div>
+      <p class="sub" style="margin:0 auto">Check your dates first, then book in under 3 minutes.</p>
+      <div class="hero-ctas">
+        <a href="#availability" class="btn btn-primary">Check my dates</a>
+        <a href="https://forms.gle/Sw66evZ3kGFAxv3Q8" target="_blank" rel="noopener" class="btn btn-ghost">📋 Booking form ↗</a>
       </div>
     </div>
+  </section>
+</main>
 
-  </main>
-</div>
-
-<footer class="site-footer">
-  <p>© <span id="footerYear"></span> KlexDigirents · Manila, Sta. Cruz</p>
-  <p style="margin-top:6px"><a href="https://www.facebook.com/KemKlex.Co" target="_blank" style="color:var(--rust-light)">📘 facebook.com/KemKlex.Co</a></p>
-  <p style="margin-top:4px">Maya: 09516427351 · Mari Bank: 17557472266 · GoTyme: 010591624320</p>
-  <p style="margin-top:6px;color:var(--hint)">Last updated: <span id="lastCheck">just now</span></p>
+<footer>
+  <div class="wrap">
+    <p>© <span id="yr"></span> KlexDigirents · Sta. Cruz, Manila · <a href="https://www.facebook.com/KemKlex.Co" target="_blank" rel="noopener">facebook.com/KemKlex.Co</a></p>
+  </div>
 </footer>
 
+<div class="mbar">
+  <a href="#availability" class="btn btn-primary">Check dates</a>
+  <a href="https://forms.gle/Sw66evZ3kGFAxv3Q8" target="_blank" rel="noopener" class="btn btn-ghost">Book</a>
+</div>
+
+<!-- CHATBOT -->
+<button class="chat-fab" type="button" id="chatFab" aria-label="Open KlexBot chat" aria-expanded="false" aria-controls="chat">💬<span class="dot"></span></button>
+<div class="chat" id="chat" role="dialog" aria-label="KlexBot chat" aria-modal="false">
+  <div class="chat-head">
+    <span class="brand-mark" aria-hidden="true">🤖</span>
+    <div><strong>KlexBot</strong><small>Answers from our FAQ + live schedule</small></div>
+    <button class="icon-btn" type="button" id="chatClose" aria-label="Close chat">✕</button>
+  </div>
+  <div class="chat-log" id="chatLog" aria-live="polite"></div>
+  <div class="chips" id="chips"></div>
+  <form class="chat-form" id="chatForm">
+    <input id="chatInput" autocomplete="off" placeholder="e.g. avail ba C813 sa Nov 8?" aria-label="Message KlexBot">
+    <button type="submit" aria-label="Send">➤</button>
+  </form>
+</div>
+<div class="toast" id="toast">Copied!</div>
+
 <script>
-const BOOK_FORM_URL='https://forms.gle/Sw66evZ3kGFAxv3Q8';
-const OWNER_PASSWORD='klexdigirents2026';
-const STORAGE_KEY='kdr_bookings_v2';
-const MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
-const DAYS_SHORT=['S','M','T','W','T','F','S'];
+/* ═════════ CONFIG — edit these ═════════ */
+const CONFIG = {
+  bookingFormUrl: 'https://forms.gle/Sw66evZ3kGFAxv3Q8',
+  messengerUrl: 'https://m.me/KemKlex.Co',
+  pricePerDay: 200, reservationFee: 100, deposit: 150, extraBattery: 30,
+  // Live schedule (recommended): Google Sheet → File → Share → Publish to web → choose the
+  // bookings tab → CSV → paste the link here. Columns: camera,start,end,status
+  // e.g.  C613,2026-11-03,2026-11-04,confirmed   (status "cancelled" rows are ignored)
+  bookingsCsvUrl: '',
+};
+// Used only when bookingsCsvUrl is empty. Dates are pickup→return (YYYY-MM-DD). No names = no privacy leak.
+const MANUAL_BOOKINGS = [
+  // { camera: 'c613', start: '2026-11-03', end: '2026-11-04' },
+];
 
-// ── SAMPLE PHOTOS ──
-// To add real photos: put the direct image URLs in these arrays.
-// For Google Drive: open each photo → Share → "Anyone with link" → copy link
-// Then change: https://drive.google.com/file/d/FILE_ID/view
-// To:          https://drive.google.com/uc?export=view&id=FILE_ID
-const SAMPLE_PHOTOS = {
-  c613: [], // add URLs here e.g. ['https://drive.google.com/uc?export=view&id=XXX']
-  c533: [],
-  c813: []
+const CAMERAS = {
+  c613: { name:'C613', mp:'6.2 MP', specs:'6.2 MP · 3× optical zoom · 2.4" LCD', best:'Flash photography',
+    desc:'Hits the sweet spot for the classic direct-flash party look: faces stay sharp when the flash fires, without harsh noise. Punchy, vibrant flash portraits.' },
+  c533: { name:'C533', mp:'5.0 MP', specs:'5.0 MP · 3× optical zoom · 2.2" LCD · optical viewfinder', best:'Sunny day shoots',
+    desc:'The only one with a real optical viewfinder. When bright sun washes out the screen, you can still frame your shot perfectly.' },
+  c813: { name:'C813', mp:'8.2 MP', specs:'8.2 MP · 3× optical zoom · 2.4" LCD · ISO up to 1250', best:'Night & low light',
+    desc:'Highest resolution, ISO up to 1250 and digital image stabilization, so night shots come out less blurry.' },
 };
 
-const CAMERAS={
-  c613:{name:'C613',mp:'6.2 MP',specs:'6.2 MP · 3× Optical Zoom · 2.4" LCD',price:'₱200 / day',perfectIcon:'⚡',perfectTitle:'Perfect for Flash Photography',perfectDesc:'Its 6.2 MP sensor hits the sweet spot for the classic "direct flash" party look — sharp enough to keep faces clear when the flash fires, without aggressively capturing harsh noise. Punchy, vibrant flash portraits every time.'},
-  c533:{name:'C533',mp:'5.0 MP',specs:'5.0 MP · 3× Optical Zoom · 2.2" LCD',price:'₱200 / day',perfectIcon:'☀️',perfectTitle:'Perfect for Sunny Day Shoots',perfectDesc:'The only camera of the three with a real-image optical viewfinder — that small glass window above the lens. A lifesaver on bright days when glare washes out the rear LCD, so you can frame shots perfectly no matter how harsh the sunlight.'},
-  c813:{name:'C813',mp:'8.2 MP',specs:'8.2 MP · 3× Optical Zoom · 2.4" LCD',price:'₱200 / day',perfectIcon:'🌙',perfectTitle:'Perfect for Night & Low-Light',perfectDesc:'With the highest resolution (8.2 MP) and ISO up to 1250, it\'s the most capable in low-light. Digital Image Stabilization reduces blur that typically ruins nighttime point-and-shoot photos — so your night shots actually come out.'}
-};
+/* ═════════ KNOWLEDGE BASE (powers FAQ + KlexBot retrieval) ═════════ */
+const KB = [
+  { id:'price', cat:'Pricing', q:'How much is the rental per day?', a:'All three cameras (C613, C533, C813) are <strong>₱200 per day</strong>. Plus a <strong>₱100 reservation fee</strong> to lock your slot and a <strong>₱150 refundable deposit</strong> paid at pickup.', tags:'price cost rate rent fee daily magkano presyo bayad' },
+  { id:'reserve', cat:'Booking', q:'How do I book?', a:'1) Check your dates on the calendar. 2) Pay the ₱100 reservation fee via Maya, MariBank or GoTyme and screenshot it. 3) Fill the <a href="https://forms.gle/Sw66evZ3kGFAxv3Q8" target="_blank" rel="noopener">booking form</a> with your details, ID photo and receipt. 4) Wait for your confirmation and meetup details.', tags:'book booking reserve reservation form steps how process paano mag book' },
+  { id:'payment', cat:'Pricing', q:'How do I pay?', a:'Send payment to <strong>Maya 09516427351</strong>, <strong>MariBank 17557472266</strong> or <strong>GoTyme 010591624320</strong>. Screenshot the receipt and attach it to the booking form.', tags:'pay payment gcash maya mari bank gotyme transfer send account number' },
+  { id:'deposit', cat:'Pricing', q:'How does the security deposit work?', a:'A <strong>₱150 deposit</strong> is collected at pickup and <strong>refunded in full</strong> when you return everything on time and in good condition. A no-show forfeits the deposit.', tags:'deposit security refund refundable balik' },
+  { id:'id', cat:'Booking', q:'What IDs are accepted?', a:'Any valid government ID. <strong>Student ID preferred</strong> if you are a student. School ID, PhilSys, driver\'s license, postal ID and UMID are fine.', tags:'id ids valid government student school philsys license postal umid requirement requirements kailangan' },
+  { id:'late', cat:'Rules', q:'What if I return it late?', a:'Return is the <strong>same hour the next day</strong> (picked up 3PM → return by 3PM tomorrow). Late fee: <strong>₱50 per hour or ₱100 per half-day</strong> beyond the agreed time.', tags:'late return delay overdue fee extend extension huli' },
+  { id:'returntime', cat:'Rules', q:'When do I return the camera?', a:'Same hour as pickup, the next day. Pickup and return hours are <strong>10AM–7PM</strong>. For multi-day rentals, return on your booked end date at the same hour.', tags:'return time when ibalik balik hour schedule next day' },
+  { id:'damage', cat:'Rules', q:'What if the camera gets damaged or lost?', a:'Functional damage = renter covers repair or replacement. Normal cosmetic wear is <strong>not charged</strong>. Lost or stolen = <strong>₱3,500</strong> full replacement.', tags:'damage damaged broken sira lost stolen nawala replacement repair scratch' },
+  { id:'cancel', cat:'Booking', q:'Can I cancel or reschedule?', a:'Within <strong>24 hours</strong> of paying the reservation fee: full refund or free reschedule. After 48 hours: partial refund. No-show: deposit forfeited.', tags:'cancel cancellation reschedule move change date refund resched' },
+  { id:'proxy', cat:'Booking', q:'Can someone else pick up for me?', a:'Yes, just tell us in advance. They must bring a valid ID. You (the renter) stay responsible for the equipment.', tags:'someone else friend pick up proxy representative iba kuha' },
+  { id:'deliver', cat:'Meetup', q:'Do you deliver?', a:'Mainly pickup in Sta. Cruz, Manila. Outside Manila? Delivery is possible but the <strong>delivery fee is shouldered by the renter</strong>.', tags:'deliver delivery ship lalamove grab hatid outside manila province' },
+  { id:'location', cat:'Meetup', q:'Where is the meetup?', a:'In front of <strong>TKL Steel Corp Bldg</strong>, Sta. Cruz, Manila, near <strong>Blumentritt Station (LRT-1)</strong>. <a href="https://maps.google.com/?q=Blumentritt+Station+Manila" target="_blank" rel="noopener">Open in Maps ↗</a>', tags:'where location address meetup meet place map blumentritt lrt saan' },
+  { id:'hours', cat:'Meetup', q:'What are your pickup hours?', a:'Pickup and return are <strong>10AM–7PM</strong>. The owner works night shift, so Messenger replies may be delayed.', tags:'hours open time schedule oras anong oras pickup' },
+  { id:'kit', cat:'Cameras', q:'What is included in the kit?', a:'Camera, battery, memory card, card reader, pouch, strap and charger. Extra battery +₱30. The card reader works best with a laptop or iPad.', tags:'kit include included inclusion box sd memory card reader charger battery strap pouch kasama' },
+  { id:'which', cat:'Cameras', q:'Which camera should I choose?', a:'<strong>C613</strong> for flash party shots, <strong>C533</strong> for sunny outdoor days (has an optical viewfinder), <strong>C813</strong> for night and low light (8.2 MP, ISO 1250, stabilization). All are ₱200/day.', tags:'which best recommend choose difference compare night party flash sunny outdoor concert better alin' },
+  { id:'transfer', cat:'Cameras', q:'How do I get my photos?', a:'Use the included card reader on a laptop or iPad to copy your photos before returning.', tags:'photos transfer copy files phone iphone android laptop ipad download get pictures kuha' },
+  { id:'printing', cat:'Pricing', q:'Do you print photos?', a:'Yes! Instax-style (Mini, Square, Wide), photobooth, photocards and strips. Example: Instax Mini ₱60/10, photo strips ₱45/5. Send files via Messenger or Gmail. See the full price table in the Pricing section.', tags:'print printing instax polaroid photocard strips photobooth' },
+  { id:'subrent', cat:'Rules', q:'Can I sub-rent or modify the camera?', a:'No. Do not sub-rent, modify or try to repair the equipment. Use it only for its intended purpose.', tags:'sub rent subrent modify repair rules terms' },
+  { id:'contact', cat:'Meetup', q:'How do I contact you?', a:'Message <strong>KemKlex.Co</strong> on <a href="https://m.me/KemKlex.Co" target="_blank" rel="noopener">Messenger</a>. Replies may be delayed (night-shift owner).', tags:'contact message messenger facebook fb chat owner human person tao' },
+];
 
-let viewYear,viewMonth,bookings=[],ownerUnlocked=false,selectedCamera='c613';
+/* ═════════ HELPERS ═════════ */
+const $ = s => document.querySelector(s);
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+const pad = n => String(n).padStart(2,'0');
+const ymd = d => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const parseYmd = s => { const [y,m,d] = s.split('-').map(Number); return new Date(y, m-1, d); };
+const addDays = (s, n) => { const d = parseYmd(s); d.setDate(d.getDate()+n); return ymd(d); };
+const today = () => ymd(new Date());
+const fmt = s => { const d = parseYmd(s); return `${MONTHS[d.getMonth()].slice(0,3)} ${d.getDate()}`; };
+const fmtLong = s => parseYmd(s).toLocaleDateString('en-PH',{weekday:'short',month:'short',day:'numeric'});
+const daysBetween = (a,b) => Math.round((parseYmd(b)-parseYmd(a))/864e5);
+const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const peso = n => '₱' + n.toLocaleString('en-PH');
 
-function ymd(y,m,d){return`${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}`}
-function today(){const d=new Date();return ymd(d.getFullYear(),d.getMonth()+1,d.getDate())}
-function fmtDate(ds){if(!ds)return'—';const[y,m,d]=ds.split('-').map(Number);return`${MONTHS[m-1]} ${d}, ${y}`}
-function fmtShort(ds){const[y,m,d]=ds.split('-').map(Number);return`${MONTHS[m-1].slice(0,3)} ${d}`}
-function isBooked(ds,cam){return bookings.some(b=>b.camera===cam&&ds>=b.start&&ds<=b.end)}
-function getBookingFor(ds,cam){return bookings.find(b=>b.camera===cam&&ds>=b.start&&ds<=b.end)}
-function saveBookings(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(bookings))}catch(e){}}
-function loadBookings(){
-  try{const raw=localStorage.getItem(STORAGE_KEY);if(raw){bookings=JSON.parse(raw);return}}catch(e){}
-  const now=new Date(),y=now.getFullYear(),mo=now.getMonth()+1;
-  bookings=[
-    {id:'d1',camera:'c613',name:'Maria Santos',contact:'09171234567',start:ymd(y,mo,3),end:ymd(y,mo,4),ref:'KDR-C613-AA01'},
-    {id:'d2',camera:'c813',name:'Juan dela Cruz',contact:'09281234567',start:ymd(y,mo,10),end:ymd(y,mo,11),ref:'KDR-C813-BB02'},
-    {id:'d3',camera:'c533',name:'Ana Reyes',contact:'09391234567',start:ymd(y,mo,18),end:ymd(y,mo,20),ref:'KDR-C533-CC03'},
-    {id:'d4',camera:'c613',name:'Pedro Garcia',contact:'09451234567',start:ymd(y,mo,22),end:ymd(y,mo,23),ref:'KDR-C613-DD04'},
-  ].filter(b=>b.end>=today());
+/* ═════════ BOOKINGS DATA ═════════ */
+let bookings = [];
+let dataSource = 'manual';
+function normCam(v){ const m = String(v||'').toLowerCase().match(/c?\s*(613|533|813)/); return m ? 'c'+m[1] : null; }
+function normDate(v){
+  v = String(v||'').trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v)) return v;
+  const m = v.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/); // Google Sheets M/D/YYYY
+  return m ? `${m[3]}-${pad(m[1])}-${pad(m[2])}` : null;
 }
-
-// ── SIDEBAR ──
-function toggleSidebar(){
-  const sb=document.getElementById('sidebar');
-  const ov=document.getElementById('sidebarOverlay');
-  sb.classList.toggle('mobile-open');
-  ov.classList.toggle('open');
+function parseCsv(text){
+  const lines = text.trim().split(/\r?\n/).map(l => l.split(',').map(c => c.replace(/^"|"$/g,'').trim()));
+  const head = lines.shift().map(h => h.toLowerCase());
+  const ix = k => head.findIndex(h => h.includes(k));
+  const [ci, si, ei, sti] = [ix('camera'), ix('start'), ix('end'), ix('status')];
+  return lines.map(r => ({ camera: normCam(r[ci]), start: normDate(r[si]), end: normDate(r[ei]), status: (r[sti]||'').toLowerCase() }))
+    .filter(b => b.camera && b.start && b.end && !/cancel/.test(b.status));
 }
-function closeSidebar(){
-  document.getElementById('sidebar').classList.remove('mobile-open');
-  document.getElementById('sidebarOverlay').classList.remove('open');
-}
-
-function toggleSbFaq(btn){
-  const item=btn.closest('.sb-faq-item');
-  const isOpen=item.classList.contains('open');
-  document.querySelectorAll('.sb-faq-item.open').forEach(el=>el.classList.remove('open'));
-  if(!isOpen)item.classList.add('open');
-}
-
-function switchPhotoTab(cam,btn){
-  document.querySelectorAll('.sb-photo-tab').forEach(t=>t.classList.remove('active'));
-  btn.classList.add('active');
-  renderSidebarPhotos(cam);
-}
-
-function renderSidebarPhotos(cam){
-  const grid=document.getElementById('sbPhotosGrid');
-  const photos=SAMPLE_PHOTOS[cam]||[];
-  if(!photos.length){
-    grid.innerHTML=`
-      <div class="sb-photo"><div class="sb-photo-placeholder">📷<br>Coming soon</div></div>
-      <div class="sb-photo"><div class="sb-photo-placeholder">📷<br>Coming soon</div></div>
-      <div class="sb-photo"><div class="sb-photo-placeholder">📷<br>Coming soon</div></div>
-      <div class="sb-photo"><div class="sb-photo-placeholder">📷<br>Coming soon</div></div>`;
-  } else {
-    grid.innerHTML=photos.map(src=>`<div class="sb-photo" onclick="openLightbox('${src}')"><img src="${src}" alt="Sample shot" loading="lazy"></div>`).join('');
+async function loadBookings(){
+  if (CONFIG.bookingsCsvUrl){
+    try {
+      const res = await fetch(CONFIG.bookingsCsvUrl, { cache:'no-store' });
+      if (!res.ok) throw new Error(res.status);
+      bookings = parseCsv(await res.text());
+      dataSource = 'live';
+      return;
+    } catch(e){ dataSource = 'error'; }
   }
+  bookings = MANUAL_BOOKINGS.map(b => ({...b, camera: normCam(b.camera)})).filter(b => b.camera);
+}
+const isBooked = (ds, cam) => bookings.some(b => b.camera === cam && ds >= b.start && ds <= b.end);
+const freeCams = ds => Object.keys(CAMERAS).filter(c => !isBooked(ds, c));
+const rangeFree = (s, e, cam) => !bookings.some(b => b.camera === cam && !(e < b.start || s > b.end));
+function nextFree(cam, from = today()){
+  for (let i = 0; i < 180; i++){ const d = addDays(from, i); if (cam ? !isBooked(d, cam) : freeCams(d).length) return d; }
+  return null;
+}
+// earliest pickup date (from `from`) where a whole rental of `nights` fits for any of `cams`
+function nextFreeRange(cams, from, nights){
+  for (let i = 1; i < 180; i++){ const s = addDays(from, i), e = addDays(s, nights); if (cams.some(c => rangeFree(s, e, c))) return s; }
+  return null;
+}
+function estimate(s, e, battery){
+  const days = Math.max(1, daysBetween(s, e));
+  const rent = days * CONFIG.pricePerDay + (battery ? CONFIG.extraBattery : 0);
+  return { days, rent };
 }
 
-// ── LIGHTBOX ──
-function openLightbox(src){
-  document.getElementById('lightboxImg').src=src;
-  document.getElementById('lightbox').classList.add('open');
-  document.body.style.overflow='hidden';
-}
-function closeLightbox(){
-  document.getElementById('lightbox').classList.remove('open');
-  document.body.style.overflow='';
-}
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
-
-// ── CAMERA ──
-function updatePerfectFor(cam){
-  const i=CAMERAS[cam];
-  document.getElementById('perfectForIcon').textContent=i.perfectIcon;
-  document.getElementById('perfectForTitle').textContent=i.perfectTitle;
-  document.getElementById('perfectForDesc').textContent=i.perfectDesc;
-}
-function selectCamera(cam){
-  selectedCamera=cam;
-  document.querySelectorAll('.cam-tab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false')});
-  document.getElementById('tab-'+cam).classList.add('active');
-  document.getElementById('tab-'+cam).setAttribute('aria-selected','true');
-  const i=CAMERAS[cam];
-  document.getElementById('camModel').textContent=i.name;
-  document.getElementById('camPrice').textContent=i.price;
-  document.getElementById('camSpecs').textContent=i.specs;
-  document.getElementById('checkCamera').value=cam;
-  updatePerfectFor(cam);
-  renderCalendar();updateStats();updateCameraBadge();
-}
-function updateCameraBadge(){
-  const t=today(),booked=isBooked(t,selectedCamera),badge=document.getElementById('camBadge');
-  badge.className=booked?'cam-badge booked':'cam-badge available';
-  badge.textContent=booked?'● Booked':'● Available';
-}
-function updateTabStatuses(){
-  const t=today();
-  Object.keys(CAMERAS).forEach(cam=>{document.getElementById('status-'+cam).className='cam-tab-status '+(isBooked(t,cam)?'booked':'available')});
+/* ═════════ HERO: TODAY ═════════ */
+function renderToday(){
+  const t = today();
+  $('#todayLabel').textContent = fmtLong(t);
+  $('#todayRows').innerHTML = Object.entries(CAMERAS).map(([k,c]) => {
+    const ok = !isBooked(t, k);
+    return `<div class="today-row"><span><span class="model">${c.name}</span><span class="mp">${c.mp}</span></span>
+      <span class="pill ${ok?'ok':'no'}">${ok?'● Available':'● Booked · free '+fmt(nextFree(k)||t)}</span></div>`;
+  }).join('');
+  $('#dataNote').textContent = dataSource === 'live' ? `Live from our booking sheet · updated ${new Date().toLocaleTimeString('en-PH',{hour:'numeric',minute:'2-digit'})}`
+    : dataSource === 'error' ? 'Couldn’t load the live schedule. Please confirm on Messenger.'
+    : 'Schedule updated by the owner. Final slot is confirmed after booking.';
 }
 
-// ── CALENDAR ──
-function renderCalendar(){
-  document.getElementById('calLabel').textContent=`${MONTHS[viewMonth]} ${viewYear}`;
-  const grid=document.getElementById('calGrid');
-  grid.innerHTML='';
-  DAYS_SHORT.forEach(d=>{const el=document.createElement('div');el.className='cal-dow';el.textContent=d;grid.appendChild(el)});
-  const firstDay=new Date(viewYear,viewMonth,1).getDay();
-  const daysInMonth=new Date(viewYear,viewMonth+1,0).getDate();
-  const t=today();
-  for(let i=0;i<firstDay;i++){const el=document.createElement('div');el.className='cal-day empty';grid.appendChild(el)}
-  for(let d=1;d<=daysInMonth;d++){
-    const ds=ymd(viewYear,viewMonth+1,d);
-    const el=document.createElement('div');el.textContent=d;
-    const isPast=ds<t,isTod=ds===t,bk=getBookingFor(ds,selectedCamera);
-    let cls='cal-day';
-    if(isPast)cls+=' past';else if(bk)cls+=' booked';else cls+=' free';
-    if(isTod)cls+=' today';
-    el.className=cls;el.setAttribute('role','gridcell');
-    if(bk&&!isPast){
-      const tip=document.createElement('div');tip.className='cal-tip';
-      tip.textContent=`${bk.name} · ${fmtShort(bk.start)}–${fmtShort(bk.end)}`;
-      el.appendChild(tip);
-    }
-    grid.appendChild(el);
+/* ═════════ CALENDAR ═════════ */
+let view = new Date(); view.setDate(1);
+let calCam = 'all';
+let pick = { start:null, end:null };
+function renderCal(){
+  $('#calLabel').textContent = `${MONTHS[view.getMonth()]} ${view.getFullYear()}`;
+  $('#legendSome').style.display = calCam === 'all' ? '' : 'none';
+  const cal = $('#cal'); const t = today();
+  let html = ['S','M','T','W','T','F','S'].map(d => `<div class="dow" aria-hidden="true">${d}</div>`).join('');
+  const first = new Date(view.getFullYear(), view.getMonth(), 1).getDay();
+  const n = new Date(view.getFullYear(), view.getMonth()+1, 0).getDate();
+  html += '<div></div>'.repeat(first);
+  for (let d = 1; d <= n; d++){
+    const ds = ymd(new Date(view.getFullYear(), view.getMonth(), d));
+    const free = calCam === 'all' ? freeCams(ds).length : (isBooked(ds, calCam) ? 0 : 3);
+    let cls = 'day ' + (ds < t ? 'past' : free === 3 ? 'free' : free === 0 ? 'full' : 'some');
+    if (ds === t) cls += ' today';
+    if (ds === pick.start || ds === pick.end) cls += ' sel';
+    else if (pick.start && pick.end && ds > pick.start && ds < pick.end) cls += ' inrange';
+    const label = `${fmtLong(ds)}: ${ds < t ? 'past' : free === 0 ? 'fully booked' : free === 3 ? 'free' : free + ' of 3 cameras free'}`;
+    html += `<button type="button" class="${cls}" data-date="${ds}" aria-label="${label}" ${ds < t || free === 0 ? 'disabled' : ''}>${d}</button>`;
   }
+  cal.innerHTML = html;
 }
-function changeMonth(dir){
-  viewMonth+=dir;
-  if(viewMonth>11){viewMonth=0;viewYear++}
-  if(viewMonth<0){viewMonth=11;viewYear--}
-  renderCalendar();
-}
+$('#cal').addEventListener('click', e => {
+  const b = e.target.closest('.day[data-date]'); if (!b || b.disabled) return;
+  const ds = b.dataset.date;
+  if (!pick.start || pick.end || ds <= pick.start){ pick = { start: ds, end: null }; $('#ckStart').value = ds; $('#ckEnd').value = addDays(ds, 1); }
+  else { pick.end = ds; $('#ckEnd').value = ds; runCheck(); }
+  renderCal();
+});
+$('#calFilter').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  calCam = b.dataset.cam;
+  document.querySelectorAll('#calFilter button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  if (calCam !== 'all') $('#ckCam').value = calCam;
+  renderCal();
+});
+$('#prevMonth').onclick = () => { view.setMonth(view.getMonth()-1); renderCal(); };
+$('#nextMonth').onclick = () => { view.setMonth(view.getMonth()+1); renderCal(); };
 
-// ── BOOKINGS ──
-function renderBookings(){
-  const el=document.getElementById('bookingList');
-  const t=today();
-  const upcoming=bookings.filter(b=>b.end>=t).sort((a,b)=>a.start.localeCompare(b.start));
-  if(!upcoming.length){el.innerHTML='<div class="empty-state">📷 No upcoming bookings — all cameras are wide open!</div>';return}
-  el.innerHTML=upcoming.map(b=>`
-    <div class="booking-row">
-      <span class="booking-camera ${b.camera}">${CAMERAS[b.camera].name}</span>
-      <div style="flex:1;min-width:0">
-        <div class="booking-dates">${fmtShort(b.start)} → ${fmtShort(b.end)}</div>
-        <div class="booking-meta">${b.name}${b.contact?' · '+b.contact:''}</div>
-        ${b.ref?`<span class="booking-ref">${b.ref}</span>`:''}
+/* ═════════ CHECKER ═════════ */
+function availabilityResult(s, e, cam){
+  const cams = cam === 'any' ? Object.keys(CAMERAS) : [cam];
+  const free = cams.filter(c => rangeFree(s, e, c));
+  return { free, cams };
+}
+function runCheck(){
+  const s = $('#ckStart').value, e = $('#ckEnd').value, cam = $('#ckCam').value, out = $('#checkOut');
+  out.className = 'check-out show';
+  if (!s || !e){ out.classList.add('no'); out.innerHTML = 'Please pick a pickup and return date.'; return; }
+  if (s < today()){ out.classList.add('no'); out.innerHTML = 'Pickup date is in the past.'; return; }
+  if (e < s){ out.classList.add('no'); out.innerHTML = 'Return date must be on or after the pickup date.'; return; }
+  pick = { start:s, end:e }; renderCal();
+  const { free } = availabilityResult(s, e, cam);
+  const { days, rent } = estimate(s, e, $('#ckBattery').checked);
+  if (free.length){
+    out.classList.add('ok');
+    out.innerHTML = `<strong>✅ Available ${fmtLong(s)} → ${fmtLong(e)}</strong>
+      <div class="cams">${free.map(c => `<span class="pill ok">${CAMERAS[c].name}</span>`).join('')}</div>
+      <div class="estimate">
+        <div><span>Rent (${days} day${days>1?'s':''} × ₱200${$('#ckBattery').checked?' + battery':''})</span><span>${peso(rent)}</span></div>
+        <div><span>Reservation fee (to lock slot)</span><span>${peso(CONFIG.reservationFee)}</span></div>
+        <div><span>Refundable deposit (at pickup)</span><span>${peso(CONFIG.deposit)}</span></div>
       </div>
-      <span class="booking-status">Booked</span>
-      ${ownerUnlocked?`<button onclick="removeBooking('${b.id}')" style="background:none;border:1px solid var(--border);border-radius:var(--radius-sm);color:var(--muted);cursor:pointer;padding:4px 8px;font-size:11px;margin-left:6px" onmouseover="this.style.color='var(--clash)';this.style.borderColor='var(--clash)'" onmouseout="this.style.color='var(--muted)';this.style.borderColor='var(--border)'">✕</button>`:''}
-    </div>`).join('');
-}
-
-// ── STATS ──
-function updateStats(){
-  const t=today();
-  const todayEl=document.getElementById('statToday'),heroWord=document.getElementById('heroWord');
-  const av=Object.keys(CAMERAS).filter(cam=>!isBooked(t,cam)).length;
-  if(av===3){todayEl.textContent='All 3';todayEl.className='stat-pill-val green';heroWord.textContent='available';heroWord.style.color='var(--rust-light)'}
-  else if(av===0){todayEl.textContent='None';todayEl.className='stat-pill-val red';heroWord.textContent='booked';heroWord.style.color='var(--clash)'}
-  else{todayEl.textContent=`${av} of 3`;todayEl.className='stat-pill-val amber';heroWord.textContent='available';heroWord.style.color='var(--rust-light)'}
-  document.getElementById('statCount').textContent=bookings.filter(b=>b.end>=t).length;
-  let nf='Today';const d2=new Date(t+'T00:00:00');
-  for(let i=0;i<120;i++){
-    const s=ymd(d2.getFullYear(),d2.getMonth()+1,d2.getDate());
-    if(Object.keys(CAMERAS).some(cam=>!isBooked(s,cam))){nf=(s===t)?'Today':fmtShort(s);break}
-    d2.setDate(d2.getDate()+1);
-  }
-  document.getElementById('statNextFree').textContent=nf;
-  document.getElementById('lastCheck').textContent=new Date().toLocaleTimeString('en-PH',{hour:'2-digit',minute:'2-digit'});
-  updateTabStatuses();updateCameraBadge();
-}
-
-// ── CHECK AVAILABILITY ──
-function checkAvailability(){
-  const cam=document.getElementById('checkCamera').value;
-  const s=document.getElementById('checkStart').value;
-  const e=document.getElementById('checkEnd').value;
-  const res=document.getElementById('checkResult');
-  const camName=CAMERAS[cam].name;
-  if(!s||!e){res.className='check-result clash';res.innerHTML='⚠️ Please select both a start and end date.';return}
-  if(e<s){res.className='check-result clash';res.innerHTML='⚠️ End date must be on or after start date.';return}
-  const clashes=bookings.filter(b=>b.camera===cam&&!(e<b.start||s>b.end));
-  if(!clashes.length){
-    res.className='check-result ok';
-    res.innerHTML=`<strong>✅ ${camName} is available!</strong><br>Free from <strong>${fmtDate(s)}</strong> to <strong>${fmtDate(e)}</strong>.<br><a href="${BOOK_FORM_URL}" target="_blank" class="book-link">📋 Book these dates →</a>`;
+      <a class="btn btn-primary" href="${CONFIG.bookingFormUrl}" target="_blank" rel="noopener">📋 Book these dates ↗</a>`;
   } else {
-    const c=clashes[0];
-    res.className='check-result clash';
-    res.innerHTML=`<strong>❌ ${camName} not available.</strong><br>Booked <strong>${fmtDate(c.start)} → ${fmtDate(c.end)}</strong> by ${c.name}.<br>Try different dates or another camera.`;
+    const alt = Object.keys(CAMERAS).filter(c => rangeFree(s, e, c));
+    const nf = nextFreeRange(cam === 'any' ? Object.keys(CAMERAS) : [cam], s, Math.max(1, daysBetween(s, e)));
+    out.classList.add('no');
+    out.innerHTML = `<strong>❌ ${cam === 'any' ? 'All cameras are' : CAMERAS[cam].name + ' is'} booked for those dates.</strong><br>
+      ${alt.length ? `Free instead: ${alt.map(c => CAMERAS[c].name).join(', ')}.<br>` : ''}${nf ? `Next open pickup for the same length: <strong>${fmtLong(nf)}</strong>.` : ''}`;
   }
 }
+$('#checker').addEventListener('submit', e => { e.preventDefault(); runCheck(); });
 
-// ── OWNER ──
-function toggleOwnerPanel(){
-  const p=document.getElementById('ownerPanel'),b=document.getElementById('ownerToggleBtn');
-  const isOpen=p.classList.toggle('open');b.setAttribute('aria-expanded',isOpen);
+/* ═════════ CAMERA CARDS ═════════ */
+$('#camCards').innerHTML = Object.entries(CAMERAS).map(([k,c]) => `
+  <article class="card cam">
+    <div class="cam-top"><h3>${c.name}</h3><span class="cam-price">₱200/day</span></div>
+    <span class="best">Best for: ${c.best}</span>
+    <span class="specs">Kodak EasyShare · ${c.specs}</span>
+    <p>${c.desc}</p>
+    <a href="#availability" class="btn btn-ghost btn-sm" data-pick-cam="${k}" style="margin-top:auto">Check ${c.name} dates</a>
+  </article>`).join('');
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-pick-cam]'); if (!b) return;
+  $(`#calFilter [data-cam="${b.dataset.pickCam}"]`).click();
+});
+
+/* ═════════ FAQ ═════════ */
+let faqCat = 'All';
+const cats = ['All', ...new Set(KB.map(k => k.cat))];
+$('#faqCats').innerHTML = cats.map(c => `<button type="button" aria-pressed="${c==='All'}">${c}</button>`).join('');
+$('#faqList').innerHTML = KB.map(k => `<details data-id="${k.id}"><summary>${k.q}</summary><div class="a">${k.a}</div></details>`).join('');
+function filterFaq(){
+  const q = $('#faqSearch').value.trim().toLowerCase(); let shown = 0;
+  KB.forEach(k => {
+    const el = $(`#faqList [data-id="${k.id}"]`);
+    const hit = (faqCat === 'All' || k.cat === faqCat) && (!q || (k.q + ' ' + k.a + ' ' + k.tags).toLowerCase().includes(q));
+    el.hidden = !hit; if (hit) shown++;
+  });
+  $('#faqEmpty').style.display = shown ? 'none' : 'block';
 }
-function unlockOwner(){
-  const pass=document.getElementById('ownerPass').value;
-  if(pass===OWNER_PASSWORD){
-    ownerUnlocked=true;
-    document.getElementById('ownerLockRow').style.display='none';
-    document.getElementById('lockedNotice').style.display='none';
-    document.getElementById('ownerForm').className='owner-form unlocked';
-    renderBookings();
-  } else {
-    const inp=document.getElementById('ownerPass');
-    inp.style.borderColor='var(--clash)';inp.style.boxShadow='0 0 0 3px var(--clash-dim)';
-    setTimeout(()=>{inp.style.borderColor='';inp.style.boxShadow=''},1500);
+$('#faqSearch').addEventListener('input', filterFaq);
+$('#faqCats').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  faqCat = b.textContent;
+  document.querySelectorAll('#faqCats button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  filterFaq();
+});
+
+/* ═════════ KLEXBOT: client-side retrieval (BM25) + intent tools ═════════ */
+const STOP = new Set('a an the is are am be to of in on for and or it i you we my me do does can could would will what how when where which who po ba na ng sa ang ay mga yung yong ko mo ka ako ikaw kayo natin namin si ni kung din rin lang naman pa po ho please pls hi hello'.split(' '));
+const SYN = { magkano:'price', presyo:'price', how_much:'price', rate:'price', cost:'price', bayad:'pay', gcash:'pay', hm:'price',
+  avail:'available', bakante:'available', vacant:'available', slot:'available', sira:'damage', nasira:'damage', broken:'damage',
+  nawala:'lost', stolen:'lost', huli:'late', overdue:'late', hatid:'deliver', delivery:'deliver', ship:'deliver', lalamove:'deliver',
+  saan:'where', address:'location', meetup:'location', ibalik:'return', balik:'return', kasama:'include', inclusions:'include',
+  included:'include', resched:'reschedule', cancelled:'cancel', ids:'id', requirements:'id', kailangan:'id', oras:'hours',
+  pictures:'photos', pics:'photos', litrato:'photos', recommend:'which', best:'which', gabi:'night', araw_araw:'daily' };
+const tokenize = s => s.toLowerCase().replace(/how much/g,'how_much').replace(/[^a-z0-9ñ_\s]/g,' ').split(/\s+/)
+  .filter(Boolean).map(w => w.replace(/^(magpa|nagpa|ipa|mag|nag|pa)(?=deliver|book|cancel|resched|print|rent)/, '')).map(w => SYN[w] || w).filter(w => !STOP.has(w));
+const DOCS = KB.map(k => ({ ...k, toks: tokenize(`${k.q} ${k.q} ${k.a.replace(/<[^>]+>/g,' ')} ${k.tags} ${k.tags}`) }));
+const AVGDL = DOCS.reduce((s,d) => s + d.toks.length, 0) / DOCS.length;
+const DF = {}; DOCS.forEach(d => new Set(d.toks).forEach(t => DF[t] = (DF[t]||0) + 1));
+function retrieve(query, k = 2){
+  const q = tokenize(query); const N = DOCS.length, k1 = 1.4, b = .75;
+  return DOCS.map(d => {
+    let score = 0;
+    q.forEach(t => {
+      const tf = d.toks.filter(x => x === t).length; if (!tf) return;
+      const idf = Math.log(1 + (N - DF[t] + .5) / (DF[t] + .5));
+      score += idf * (tf * (k1 + 1)) / (tf + k1 * (1 - b + b * d.toks.length / AVGDL));
+    });
+    return { d, score };
+  }).filter(r => r.score > 0).sort((a,b) => b.score - a.score).slice(0, k);
+}
+
+// Date understanding: "today/ngayon", "bukas", "sat/sabado", "nov 8", "nov 8-10", "11/8", "3 days"
+const MON = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+const WD = { sun:0,sunday:0,linggo:0,mon:1,monday:1,lunes:1,tue:2,tuesday:2,martes:2,wed:3,wednesday:3,miyerkules:3,
+  thu:4,thursday:4,huwebes:4,fri:5,friday:5,biyernes:5,sat:6,saturday:6,sabado:6 };
+function futureDate(m, d){ const t = new Date(); let dt = new Date(t.getFullYear(), m, d); if (ymd(dt) < today()) dt = new Date(t.getFullYear()+1, m, d); return ymd(dt); }
+function parseDates(text){
+  const s = text.toLowerCase(); let start = null, end = null;
+  const mm = s.match(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s*(\d{1,2})(?:\s*(?:-|–|to|until|hanggang|till)\s*(?:(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s*)?(\d{1,2}))?/);
+  const nm = s.match(/\b(\d{1,2})\/(\d{1,2})(?:\/\d{2,4})?(?:\s*(?:-|–|to|hanggang)\s*(\d{1,2})\/(\d{1,2}))?/);
+  if (mm){ const m = MON.indexOf(mm[1]); start = futureDate(m, +mm[2]); if (mm[4]){ const m2 = mm[3] ? MON.indexOf(mm[3]) : m; end = futureDate(m2, +mm[4]); if (end < start) end = null; } }
+  else if (nm){ start = futureDate(+nm[1]-1, +nm[2]); if (nm[3]) end = futureDate(+nm[3]-1, +nm[4]); }
+  else if (/\b(today|ngayon|now|tonight|mamaya)\b/.test(s)) start = today();
+  else if (/\b(day after tomorrow|makalawa)\b/.test(s)) start = addDays(today(), 2);
+  else if (/\b(tomorrow|bukas|tmrw|tom)\b/.test(s)) start = addDays(today(), 1);
+  else { // "linggo" is Sunday, except "isang linggo"/"2 linggo" (= week)
+    const w = Object.keys(WD).find(k => new RegExp(`\\b${k}\\b`).test(s) && !(k === 'linggo' && /\b(isang|\d+|susunod na) linggo\b/.test(s)));
+    if (w){ const diff = (WD[w] - new Date().getDay() + 7) % 7 || 7; start = addDays(today(), /\bnext\b/.test(s) && diff < 7 ? diff + 7 : diff); } }
+  const dur = s.match(/\b(\d{1,2})\s*(?:days?|araw|d)\b/);
+  const days = dur ? +dur[1] : (/\b(isang araw|one day|1day)\b/.test(s) ? 1 : null);
+  if (start && !end) end = addDays(start, days || 1);
+  return { start, end, days };
+}
+function camsIn(text){ return [...new Set((text.toLowerCase().match(/c?\s?(613|533|813)/g) || []).map(normCam))]; }
+
+function answer(text){
+  const s = text.toLowerCase();
+  const cams = camsIn(s);
+  const { start, end, days } = parseDates(s);
+  const wantsAvail = /\b(avail\w*|available|bakante|free|slot|vacant|pwede|book|reserve|rent|hiram|kuha)\b/.test(s);
+  const strongAvail = /\b(avail\w*|available|bakante|slot|vacant)\b/.test(s);
+  const wantsPrice = /\b(magkano|how much|price|presyo|total|cost|hm|bayad)\b/.test(s) || /how much/.test(s);
+
+  if (/^(hi|hello|hey|yo|kumusta|good (morning|afternoon|evening)|hellow)\b/.test(s) && s.length < 25)
+    return { html: 'Hi! 👋 I can check camera availability, give you a price estimate, or answer rental questions. Try “avail ba C813 sa Sabado?”' };
+
+  if (/\b(thanks|thank you|salamat|ty)\b/.test(s)) return { html: 'Walang anuman! 📷 Anything else?' };
+
+  // TOOL: availability lookup against the live schedule
+  if (start && (wantsAvail || cams.length || !wantsPrice)){
+    if (start < today()) return { html: 'That date has already passed. Which upcoming date are you thinking of?' };
+    const list = cams.length ? cams : Object.keys(CAMERAS);
+    const free = list.filter(c => rangeFree(start, end, c));
+    const { days: d, rent } = estimate(start, end, false);
+    const range = `<strong>${fmtLong(start)} → ${fmtLong(end)}</strong> (${d} day${d>1?'s':''})`;
+    if (free.length){
+      return { html: `✅ Good news! For ${range}, available: <strong>${free.map(c => CAMERAS[c].name).join(', ')}</strong>.<br>Estimate: ${peso(rent)} rent + ₱100 reservation + ₱150 refundable deposit.
+        <br><a class="btn btn-primary btn-sm" href="${CONFIG.bookingFormUrl}" target="_blank" rel="noopener">📋 Book now ↗</a>`, src: dataSource === 'live' ? 'live booking sheet' : 'owner schedule' };
+    }
+    const alt = Object.keys(CAMERAS).filter(c => rangeFree(start, end, c));
+    const nf = nextFreeRange(list, start, d);
+    return { html: `❌ ${list.map(c => CAMERAS[c].name).join(', ')} ${list.length > 1 ? 'are' : 'is'} booked for ${range}.` +
+      (alt.length ? ` But <strong>${alt.map(c => CAMERAS[c].name).join(', ')}</strong> ${alt.length>1?'are':'is'} free then!` : '') +
+      (nf ? `<br>Next open pickup for ${list.map(c => CAMERAS[c].name).join('/')}: <strong>${fmtLong(nf)}</strong>.` : ''), src: 'schedule' };
   }
-}
-function addBooking(){
-  if(!ownerUnlocked)return;
-  const camera=document.getElementById('addCamera').value,name=document.getElementById('addName').value.trim();
-  const contact=document.getElementById('addContact').value.trim(),start=document.getElementById('addStart').value;
-  const end=document.getElementById('addEnd').value,ref=document.getElementById('addRef').value.trim();
-  const msg=document.getElementById('ownerMsg');
-  if(!name||!start||!end){msg.className='owner-msg err';msg.textContent='✕ Name, start date, and end date are required.';return}
-  if(end<start){msg.className='owner-msg err';msg.textContent='✕ End date must be after start date.';return}
-  const clash=bookings.find(b=>b.camera===camera&&!(end<b.start||start>b.end));
-  if(clash){msg.className='owner-msg err';msg.textContent=`✕ Conflicts with ${clash.name} (${fmtShort(clash.start)}–${fmtShort(clash.end)}).`;return}
-  bookings.push({id:Date.now().toString(),camera,name,contact,start,end,ref});
-  saveBookings();
-  ['addName','addContact','addStart','addEnd','addRef'].forEach(id=>document.getElementById(id).value='');
-  msg.className='owner-msg ok';msg.textContent=`✓ ${CAMERAS[camera].name} booked for ${name}.`;
-  setTimeout(()=>{msg.textContent=''},3500);
-  renderCalendar();renderBookings();updateStats();
-}
-function removeBooking(id){
-  if(!ownerUnlocked)return;
-  bookings=bookings.filter(b=>b.id!==id);
-  saveBookings();renderCalendar();renderBookings();updateStats();
+  if (strongAvail && !start && !wantsPrice){
+    const list = cams.length ? cams : Object.keys(CAMERAS);
+    const t = today();
+    return { html: `Today (${fmtLong(t)}): ${list.map(c => `<strong>${CAMERAS[c].name}</strong> ${isBooked(t,c) ? '❌ booked, next free ' + fmt(nextFree(c)) : '✅ free'}`).join(' · ')}.<br>Tell me your date, e.g. “Nov 8 to 10” or “this Saturday”.`, src: 'schedule' };
+  }
+  // TOOL: price calculator
+  if (wantsPrice && days){
+    const rent = days * CONFIG.pricePerDay;
+    return { html: `For <strong>${days} day${days>1?'s':''}</strong>: ${peso(rent)} rent (₱200/day, any model) + ₱100 reservation fee + ₱150 refundable deposit at pickup. Extra battery +₱30.`, src: 'pricing' };
+  }
+  // RAG: retrieve top FAQ passages and answer from them
+  const hits = retrieve(text);
+  if (hits.length && hits[0].score > 1.2){
+    const top = hits[0].d; let html = top.a;
+    if (hits[1] && hits[1].score > hits[0].score * .75) html += `<br><br><em>Related:</em> ${hits[1].d.a}`;
+    return { html, src: [top, hits[1] && hits[1].score > hits[0].score * .75 ? hits[1].d : null].filter(Boolean).map(d => d.q).join(' · ') };
+  }
+  return { html: `I'm not sure about that one. 🙏 For anything not in our FAQ, message the owner on <a href="${CONFIG.messengerUrl}" target="_blank" rel="noopener">Messenger</a> (replies may be delayed, night shift).` };
 }
 
-// ── INIT ──
-function init(){
-  const now=new Date();
-  viewYear=now.getFullYear();viewMonth=now.getMonth();
-  const t=today();
-  document.getElementById('checkStart').value=t;
-  document.getElementById('checkEnd').value=t;
-  document.getElementById('footerYear').textContent=now.getFullYear();
-  loadBookings();
-  selectCamera('c613');
-  renderSidebarPhotos('c613');
-  renderBookings();updateStats();
-  setInterval(updateStats,300000);
+/* chat UI */
+const chat = $('#chat'), log = $('#chatLog');
+const CHIPS = ['Available today?', 'Avail this Saturday?', 'How much for 3 days?', 'Which camera for night?', 'Late return fee?', 'Where is the meetup?'];
+function addMsg(html, who = 'bot', src){
+  const el = document.createElement('div'); el.className = 'msg ' + who;
+  el.innerHTML = html + (src ? `<span class="src">Source: ${esc(src)}</span>` : '');
+  log.appendChild(el); log.scrollTop = log.scrollHeight;
 }
-init();
+function ask(text){
+  text = text.trim(); if (!text) return;
+  addMsg(esc(text), 'user');
+  const typing = document.createElement('div'); typing.className = 'msg bot';
+  typing.innerHTML = '<span class="typing"><i></i><i></i><i></i></span>'; log.appendChild(typing); log.scrollTop = log.scrollHeight;
+  setTimeout(() => { typing.remove(); const r = answer(text); addMsg(r.html, 'bot', r.src); }, 450);
+}
+function openChat(){
+  chat.classList.add('open'); $('#chatFab').setAttribute('aria-expanded','true');
+  if (!log.children.length) addMsg('Hi! I’m <strong>KlexBot</strong> 📷 Ask me about availability, prices, or rental rules. English or Taglish is fine!');
+  setTimeout(() => $('#chatInput').focus(), 150);
+}
+function closeChat(){ chat.classList.remove('open'); $('#chatFab').setAttribute('aria-expanded','false'); $('#chatFab').focus(); }
+$('#chips').innerHTML = CHIPS.map(c => `<button type="button">${c}</button>`).join('');
+$('#chips').addEventListener('click', e => { const b = e.target.closest('button'); if (b) ask(b.textContent); });
+$('#chatFab').onclick = () => chat.classList.contains('open') ? closeChat() : openChat();
+$('#chatClose').onclick = closeChat;
+document.querySelectorAll('[data-open-chat]').forEach(b => b.addEventListener('click', openChat));
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && chat.classList.contains('open')) closeChat(); });
+$('#chatForm').addEventListener('submit', e => { e.preventDefault(); const i = $('#chatInput'); ask(i.value); i.value = ''; });
+
+/* copy buttons */
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-copy]'); if (!b) return;
+  navigator.clipboard?.writeText(b.dataset.copy).then(() => { const t = $('#toast'); t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1400); });
+});
+
+/* ═════════ INIT ═════════ */
+(async function init(){
+  $('#yr').textContent = new Date().getFullYear();
+  const t = today(); $('#ckStart').value = t; $('#ckEnd').value = addDays(t, 1); $('#ckStart').min = t; $('#ckEnd').min = t;
+  await loadBookings();
+  renderToday(); renderCal();
+  setInterval(async () => { await loadBookings(); renderToday(); renderCal(); }, 5 * 60 * 1000);
+})();
 </script>
 </body>
 </html>
