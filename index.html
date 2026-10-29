@@ -51,7 +51,8 @@ section{padding:64px 0;border-top:1px solid var(--border)}
 .btn-sm{padding:8px 14px;min-height:36px;font-size:13px}
 
 /* NAV */
-.nav{position:sticky;top:0;z-index:50;background:rgba(28,28,26,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav{position:sticky;top:0;z-index:50;background:transparent;border-bottom:1px solid transparent;transition:background-color .3s,border-color .3s,backdrop-filter .3s,-webkit-backdrop-filter .3s}
+.nav.scrolled{background:rgba(28,28,26,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--border)}
 .nav .wrap{display:flex;align-items:center;gap:16px;height:60px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:800}
 .brand-mark{width:34px;height:34px;border-radius:10px;background:var(--rust-dim);border:1px solid var(--rust-border);display:grid;place-items:center}
@@ -870,6 +871,11 @@ document.addEventListener('click', e => {
 });
 
 /* ═════════ INIT ═════════ */
+/* header: transparent over hero, frosted once scrolled */
+const nav = $('.nav');
+const syncNav = () => nav.classList.toggle('scrolled', scrollY > 8);
+addEventListener('scroll', syncNav, { passive:true }); syncNav();
+
 (async function init(){
   $('#yr').textContent = new Date().getFullYear();
   const t = today(); $('#ckStart').value = t; $('#ckEnd').value = addDays(t, 1); $('#ckStart').min = t; $('#ckEnd').min = t;
